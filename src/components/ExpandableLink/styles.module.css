@@ -1,0 +1,26 @@
+.container {
+  @apply flex flex-col;
+}
+
+.parent {
+  @apply flex items-center w-full justify-between text-base font-medium;
+}
+
+.sub_container {
+  @apply py-6 grid grid-cols-2 gap-y-[37px] gap-x-[55px];
+}
+
+.sub_label {
+  @apply flex items-center gap-x-3;
+}
+
+.details {
+  @apply flex flex-col gap-y-1;
+}
+
+.details span {
+  @apply font-semibold text-xs leading-[15px];
+}
+.details p {
+  @apply text-[10px] leading-3 text-[#12213C];
+}
