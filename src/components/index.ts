@@ -10,3 +10,7 @@ export * from './Testimonial';
 export * from './Support';
 export * from './Featured';
 export * from './FAQs';
+export * from './Testimonials';
+export * from './Vision';
+export * from './Panes';
+export * from './SectionHeading';

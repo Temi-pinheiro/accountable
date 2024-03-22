@@ -2,9 +2,9 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import { Group } from '../Group';
-import { NavLink } from '../NavLink';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { NavLink } from '../NavLink';
 
 export const NavBar = () => {
   const pathName = usePathname();
@@ -35,23 +35,27 @@ export const NavBar = () => {
               paths={[
                 {
                   label: 'Accountable PISP',
-                  to: '/lend',
+                  to: '/accountable-pisp',
                 },
                 {
                   label: 'Monthly Bookkeeping',
-                  to: '/borrow',
+                  to: '/bookkeeping',
                 },
                 {
                   label: 'Tax Filing & Advisory',
-                  to: '/bnpl',
+                  to: '/tax',
                 },
                 {
                   label: 'Accountable FMCC',
-                  to: '/parasol-insurance',
+                  to: '/accountable-fmcc',
                 },
                 {
                   label: 'Catchup Accounting',
-                  to: '/bail-me',
+                  to: '/catchup-bookkeeping',
+                },
+                {
+                  label: 'Retroactive Accounting',
+                  to: '/retrospective-bookkeeping',
                 },
               ]}
             />

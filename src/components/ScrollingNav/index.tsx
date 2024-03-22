@@ -2,7 +2,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from 'react';
 import { Group } from '../Group';
-import { NavLink } from '../NavLink';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import {
@@ -15,6 +14,7 @@ import {
 } from 'framer-motion';
 import { clamp } from '~/helper/clamp';
 import { useBoundedScroll } from '~/hooks/useBoundedScroll';
+import { NavLink } from '../NavLink';
 
 export const ScrollingNav = () => {
   let { scrollYBounded, scrollY } = useBoundedScroll(80);
@@ -51,7 +51,12 @@ export const ScrollingNav = () => {
           <Group key='center'>
             <ul className='flex gap-x-8 items-center text-sm font-medium'>
               <li>
-                <Link href='/about-us'>About Us</Link>
+                <Link
+                  href='/about-us'
+                  className='hover:text-midnight duration-200 transition'
+                >
+                  About Us
+                </Link>
               </li>
               <li>
                 <NavLink
@@ -60,28 +65,37 @@ export const ScrollingNav = () => {
                   paths={[
                     {
                       label: 'Accountable PISP',
-                      to: '/lend',
+                      to: '/accountable-pisp',
                     },
                     {
                       label: 'Monthly Bookkeeping',
-                      to: '/borrow',
+                      to: '/bookkeeping',
                     },
                     {
                       label: 'Tax Filing & Advisory',
-                      to: '/bnpl',
+                      to: '/tax',
                     },
                     {
                       label: 'Accountable FMCC',
-                      to: '/parasol-insurance',
+                      to: '/accountable-fmcc',
                     },
                     {
                       label: 'Catchup Accounting',
-                      to: '/bail-me',
+                      to: '/catchup-bookkeeping',
+                    },
+                    {
+                      label: 'Retroactive Accounting',
+                      to: '/retrospective-bookkeeping',
                     },
                   ]}
                 />
               </li>
-              <Link href='/about-us'>Blog</Link>
+              <Link
+                href='/about-us'
+                className='hover:text-midnight duration-200 transition'
+              >
+                Blog
+              </Link>
             </ul>
           </Group>
           <Group key='right'>

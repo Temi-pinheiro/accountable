@@ -3,7 +3,7 @@ import React from 'react';
 
 export const SupportCard = () => {
   return (
-    <div className='mt-[120px] py-24 bg-[#f9f7f4]'>
+    <div className=' py-24 bg-[#f9f7f4]'>
       <div className='max-w-[990px] mx-auto'>
         <div className='flex flex-col items-center'>
           <h4 className='text-sm text-midnight border border-midnight py-1 px-[10px] rounded-full w-fit'>

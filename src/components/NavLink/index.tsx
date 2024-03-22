@@ -54,7 +54,7 @@ export const NavLink = ({
       className={styles.container}
     >
       <motion.span
-        className='flex items-center gap-x-2 '
+        className='flex items-center gap-x-2 py-2'
         onMouseEnter={getMouseToStay}
         onMouseLeave={getMouseToLeave}
       >
