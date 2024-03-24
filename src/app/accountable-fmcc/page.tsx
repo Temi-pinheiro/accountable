@@ -161,12 +161,12 @@ export default function AccFMCC() {
                   </div>
                   <div className='max-w-[460px] w-full flex flex-col'>
                     <img
-                      src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642e7f245b124550f6c94ccf_fave.png'
+                      src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642e7f24091a221af4eb9829_random.png'
                       loading='lazy'
                       width='460'
                       sizes='(max-width: 479px) 100vw, (max-width: 767px) 39vw, 41vw'
                       alt=''
-                      srcSet='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642e7f245b124550f6c94ccf_fave-p-500.png 500w, https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642e7f245b124550f6c94ccf_fave-p-800.png 800w, https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642e7f245b124550f6c94ccf_fave.png 921w'
+                      srcSet='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642e7f24091a221af4eb9829_random-p-500.png 500w, https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642e7f24091a221af4eb9829_random-p-800.png 800w, https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642e7f24091a221af4eb9829_random.png 921w'
                     />
                   </div>
                 </div>

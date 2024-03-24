@@ -1,7 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @next/next/no-img-element */
 import { Metadata } from 'next';
-import { Group, SectionHeading, SupportCard, Testimonials } from '~/components';
+import {
+  Check,
+  Group,
+  SectionHeading,
+  SupportCard,
+  Testimonials,
+} from '~/components';
 import { Figtree } from 'next/font/google';
 import Link from 'next/link';
 const figtree = Figtree({ subsets: ['latin'] });
@@ -64,58 +70,6 @@ export default function CatchupBKK() {
           </div>
         </div>
       </Group>
-      <Group key='how it works'>
-        <div className='mt-[120px] bg-[#f7f9fb]'>
-          <div className='pt-[120px] pb-[160px] max-w-[1230px] mx-auto'>
-            <div className='flex flex-col items-center'>
-              <SectionHeading
-                title='HOW IT WORKS'
-                heading='Need historical Bookeeping?'
-                paragraph='Finance for businesses, powered by real humans. We work round the clock to assist you with anything you need.'
-              />
-              <div className='grid grid-cols-2 gap-x-6 gap-y-8 max-w-[924px] mt-[80px]'>
-                <div className='flex flex-col p-6 rounded-lg border border-[#e8ecfc] bg-white'>
-                  <div className='w-10 h-10 rounded-full flex items-center justify-center border-[#8a9ff2] text-[#8a9ff2] border'>
-                    <div className='text-block-16'>01</div>
-                  </div>
-                  <h1 className='mt-3 font-semibold text-heading'>
-                    Catchup Bookkeeping
-                  </h1>
-                  <p className='text-body text-sm mt-2'>
-                    For businesses that are two years or less behind on their
-                    bookkeeping
-                  </p>
-                  <Link
-                    href='/catchup-bookkeeping'
-                    className='border rounded-lg border-midnight py-2 px-4 w-fit mt-6'
-                  >
-                    <div className='text-midnight'>Read more</div>
-                  </Link>
-                </div>
-                <div className='flex flex-col p-6 rounded-lg border border-[#e8ecfc] bg-white'>
-                  <div className='w-10 h-10 rounded-full flex items-center justify-center border-[#8a9ff2] text-[#8a9ff2] border'>
-                    <div className='text-block-16'>02</div>
-                  </div>
-                  <h1 className='mt-3 font-semibold text-heading'>
-                    Retroactive Accounting
-                  </h1>
-                  <p className='text-body text-sm mt-2'>
-                    For businesses that are more than two years behind on your
-                    books and taxes
-                  </p>
-                  <Link
-                    href='/retrospective-bookkeeping'
-                    className='border rounded-lg border-midnight py-2 px-4 w-fit mt-6'
-                  >
-                    <div className='text-midnight'>Read more</div>
-                  </Link>
-                </div>
-              </div>
-              <div className='mt-[80px]'></div>
-            </div>
-          </div>
-        </div>
-      </Group>
 
       <Group key='benefits'>
         <div className='mt-[120px] bg-[#fcfeff]'>
@@ -125,26 +79,25 @@ export default function CatchupBKK() {
               heading='Benefits of using Accountable for your bookkeeping'
               paragraph='Finance for businesses, powered by real humans. We work round the clock to assist you with anything you need.'
             />
-            <div className='flex flex-col items-center justify-between max-w-[1112px] w-full mt-[82px]'>
+            <div className='flex flex-col items-center justify-between max-w-[856px] w-full mt-[82px]'>
               <Group key='benefits grid'>
                 <div className='flex items-center justify-between w-full'>
-                  <div className='max-w-[220px] flex flex-col items-center gap-y-3 text-center'>
+                  <div className='max-w-[248px] flex flex-col items-center gap-y-3 text-center'>
                     <img
-                      src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642510bdb6ff9a11f9016272_accounting%202.png'
+                      src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/6426f13db2096d417ae95205_fast.png'
                       loading='lazy'
                       width='56'
                       alt=''
                     />
                     <div className=' text-heading font-semibold'>
-                      Your own accountant
+                      Swift Turnaround Times
                     </div>
                     <p className='text-body text-sm'>
-                      Your accountant, with help from a team and resources,
-                      provides personalized assistance for informed financial
-                      decisions.
+                      Our efficient service quickly tackles overdue bookkeeping,
+                      saving you time and reducing deadline stress.
                     </p>
                   </div>
-                  <div className='max-w-[220px] flex flex-col items-center gap-y-3 text-center'>
+                  <div className='max-w-[248px] flex flex-col items-center gap-y-3 text-center'>
                     <img
                       src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642510bd943fc89907d9e658_tax%202.png'
                       loading='lazy'
@@ -152,44 +105,26 @@ export default function CatchupBKK() {
                       alt=''
                     />
                     <div className=' text-heading font-semibold'>
-                      Taxes handled, without stress
+                      Tidy tax-ready financials
                     </div>
                     <p className='text-body text-sm'>
-                      By enrolling in the Essential Plan, we will assist you in
-                      relieving the stress related to taxes and provide constant
-                      peace of mind.
+                      We provide tax and audit-ready financials for every
+                      catch-up year to simplify the process.
                     </p>
                   </div>
-                  <div className='max-w-[220px] flex flex-col items-center gap-y-3 text-center'>
+                  <div className='max-w-[248px] flex flex-col items-center gap-y-3 text-center'>
                     <img
-                      src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642510bd8054c53eac77d37c_verify%202.png'
+                      src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/6426f13d39d5afb7e9c0e444_stop.png'
                       loading='lazy'
                       width='56'
                       alt=''
                     />
                     <div className=' text-heading font-semibold'>
-                      Powerful financial reporting
+                      Erase misstatement Risk
                     </div>
                     <p className='text-body text-sm'>
-                      We help keep track of current and past performance for
-                      valuable insights to make informed financial decisions for
-                      your business.
-                    </p>
-                  </div>
-                  <div className='max-w-[220px] flex flex-col items-center gap-y-3 text-center'>
-                    <img
-                      src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642510bd658b1d109cf4e936_customer-service%202.png'
-                      loading='lazy'
-                      width='56'
-                      alt=''
-                    />
-                    <div className=' text-heading font-semibold'>
-                      Get answers in real-time
-                    </div>
-                    <p className='text-body text-sm'>
-                      Our AI chatbot can assist with tax compliance, financial
-                      planning, and accounting advice for quick and immediate
-                      answers.
+                      Avoid misstated earnings; ensure accurate financial health
+                      and prevent legal issues or tax overpayment
                     </p>
                   </div>
                 </div>
@@ -215,7 +150,106 @@ export default function CatchupBKK() {
           </div>
         </div>
       </Group>
-
+      <Group key='features'>
+        <div className='mt-20 mb-[120px]'>
+          <div className='flex flex-col items-center max-w-[1064px] w-full mx-auto'>
+            <div className='flex flex-col text-center max-w-[620px] pb-20 '>
+              <h3 className='text-heading text-[40px] font-bold leading-tight'>
+                Features available to our catchup bookkeeping service{' '}
+              </h3>
+              <p className='text-xl text-body mt-[10px]'>
+                Finance for businesses, powered by real humans. We work round
+                the clock to assist you with anything you need.
+              </p>
+            </div>
+            <Group key='check grid'>
+              <Group key='first'>
+                <div className='border-t border-[#f2f2f2] pt-20 flex items-start justify-between w-full'>
+                  <div className='max-w-[364px] w-full flex flex-col'>
+                    <h3 className='mt-4 text-heading font-bold text-[32px]'>
+                      Regain control of your books effortlessly and without
+                      stress.{' '}
+                    </h3>
+                    <p className='mt-2 text-body'>
+                      With our experienced professionals and advanced automation
+                      tools, you can manage your financial records efficiently
+                      and without stress.
+                    </p>
+                  </div>
+                  <div className='flex flex-col max-w-[530px] w-full gap-y-5'>
+                    <Check
+                      title='Efficient and error-free bookkeeping'
+                      details="Whether you're missing months or years of bookkeeping or have no records at all, we'll help you get back on track quickly and accurately."
+                    />
+                    <Check
+                      title="We'll do the hard work for you"
+                      details='Get peace of mind with our team of experts and your dedicated bookkeeper working together to complete your overdue books accurately, with regular reviews ensuring tax-readiness.'
+                    />
+                    <Check
+                      title='No-frills pricing'
+                      details='Like with our other bundles, enjoy stable pricing with Catch Up Bookkeeping starting at $100/month, with no additional charges, hourly rates, upcharges, or hidden fees. Our fixed price structure motivates us to complete the work as fast as possible and our reputation, efficiently.'
+                    />
+                  </div>
+                </div>
+              </Group>
+              <Group key='second'>
+                <div className='border-t border-[#f2f2f2] pt-20 mt-20 flex items-start justify-between w-full'>
+                  <div className='max-w-[364px] w-full flex flex-col'>
+                    <h3 className='mt-4 text-heading font-bold text-[32px]'>
+                      Personalised Experience, just for you
+                    </h3>
+                    <p className='mt-2 text-body'>
+                      Get a personalised experience that's tailored specifically
+                      to your business.
+                    </p>
+                  </div>
+                  <div className='flex flex-col max-w-[530px] w-full gap-y-5'>
+                    <Check
+                      title='Accessible and Secure Records'
+                      details="We use state-of-the-art tools to keep your records accessible and secure. You'll have access to your records at any time, from anywhere, and you can rest assured that your data is protected with the latest security protocols."
+                    />
+                    <Check
+                      title='Expert Analysis and Advice'
+                      details="In addition to helping you catch up on your accounting records, our team of experienced accountants can also provide expert analysis and advice. We'll help you understand your financial records and provide insights to help you make informed business decisions."
+                    />
+                    <Check
+                      title='Timely Communication and Updates'
+                      details="We understand the importance of timely communication and updates when it comes to accounting records. That's why we'll keep you informed throughout the Catch Up Accounting process, providing regular updates on our progress and answering any questions you may have. "
+                    />
+                  </div>
+                </div>
+              </Group>
+              <Group key='third'>
+                <div className='border-t border-[#f2f2f2] pt-20 mt-20 flex items-start justify-between w-full'>
+                  <div className='max-w-[364px] w-full flex flex-col'>
+                    <h3 className='mt-4 text-heading font-bold text-[32px]'>
+                      Year-End Financial Package
+                    </h3>
+                    <p className='mt-2 text-body'>
+                      Let’s handle your catch up and we will give you a year-end
+                      financial package for each year of catch up.
+                    </p>
+                  </div>
+                  <div className='flex flex-col max-w-[530px] w-full gap-y-5'>
+                    <Check
+                      title='All your reports in one place'
+                      details='Say goodbye to scattered financial documents - our Year End Financial Package includes your IFRS compliant income statement, balance sheet, statement of cash flows, and notes to the accounts, all in one place.'
+                    />
+                    <Check
+                      title='Tax-Ready Documentation'
+                      details='Our Year End Financial Package includes tax-ready documentation, making it easy to file your taxes and avoid accumulating penalties for missed deadlines. Our expert team ensures that all documentation is accurate and complete, so you can file with confidence.'
+                    />
+                    <Check
+                      title='Organised and Efficient'
+                      details='Our Year End Financial Package is designed to make catching up on years of financial records as efficient and organised as possible making it easy for you to understand your financial situation.'
+                    />
+                  </div>
+                </div>
+              </Group>
+            </Group>
+          </div>
+        </div>
+      </Group>
       <SupportCard />
       <Testimonials />
     </div>

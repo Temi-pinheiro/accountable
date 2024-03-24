@@ -1,7 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @next/next/no-img-element */
 import { Metadata } from 'next';
-import { Group, SectionHeading, SupportCard, Testimonials } from '~/components';
+import {
+  Check,
+  Group,
+  SectionHeading,
+  SupportCard,
+  Testimonials,
+} from '~/components';
 import { Figtree } from 'next/font/google';
 import Link from 'next/link';
 const figtree = Figtree({ subsets: ['latin'] });
@@ -65,58 +71,6 @@ export default function RetroBkk() {
           </div>
         </div>
       </Group>
-      <Group key='how it works'>
-        <div className='mt-[120px] bg-[#f7f9fb]'>
-          <div className='pt-[120px] pb-[160px] max-w-[1230px] mx-auto'>
-            <div className='flex flex-col items-center'>
-              <SectionHeading
-                title='HOW IT WORKS'
-                heading='Need historical Bookeeping?'
-                paragraph='Finance for businesses, powered by real humans. We work round the clock to assist you with anything you need.'
-              />
-              <div className='grid grid-cols-2 gap-x-6 gap-y-8 max-w-[924px] mt-[80px]'>
-                <div className='flex flex-col p-6 rounded-lg border border-[#e8ecfc] bg-white'>
-                  <div className='w-10 h-10 rounded-full flex items-center justify-center border-[#8a9ff2] text-[#8a9ff2] border'>
-                    <div className='text-block-16'>01</div>
-                  </div>
-                  <h1 className='mt-3 font-semibold text-heading'>
-                    Catchup Bookkeeping
-                  </h1>
-                  <p className='text-body text-sm mt-2'>
-                    For businesses that are two years or less behind on their
-                    bookkeeping
-                  </p>
-                  <Link
-                    href='/catchup-bookkeeping'
-                    className='border rounded-lg border-midnight py-2 px-4 w-fit mt-6'
-                  >
-                    <div className='text-midnight'>Read more</div>
-                  </Link>
-                </div>
-                <div className='flex flex-col p-6 rounded-lg border border-[#e8ecfc] bg-white'>
-                  <div className='w-10 h-10 rounded-full flex items-center justify-center border-[#8a9ff2] text-[#8a9ff2] border'>
-                    <div className='text-block-16'>02</div>
-                  </div>
-                  <h1 className='mt-3 font-semibold text-heading'>
-                    Retroactive Accounting
-                  </h1>
-                  <p className='text-body text-sm mt-2'>
-                    For businesses that are more than two years behind on your
-                    books and taxes
-                  </p>
-                  <Link
-                    href='/retrospective-bookkeeping'
-                    className='border rounded-lg border-midnight py-2 px-4 w-fit mt-6'
-                  >
-                    <div className='text-midnight'>Read more</div>
-                  </Link>
-                </div>
-              </div>
-              <div className='mt-[80px]'></div>
-            </div>
-          </div>
-        </div>
-      </Group>
 
       <Group key='benefits'>
         <div className='mt-[120px] bg-[#fcfeff]'>
@@ -126,71 +80,57 @@ export default function RetroBkk() {
               heading='Benefits of using Accountable for your bookkeeping'
               paragraph='Finance for businesses, powered by real humans. We work round the clock to assist you with anything you need.'
             />
-            <div className='flex flex-col items-center justify-between max-w-[1112px] w-full mt-[82px]'>
+            <div className='flex flex-col items-center justify-between max-w-[846px] w-full mt-[82px]'>
               <Group key='benefits grid'>
                 <div className='flex items-center justify-between w-full'>
-                  <div className='max-w-[220px] flex flex-col items-center gap-y-3 text-center'>
+                  <div className='max-w-[248px] flex flex-col items-center gap-y-3 text-center'>
                     <img
-                      src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642510bdb6ff9a11f9016272_accounting%202.png'
+                      src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642700aa6306fd215d31bd7a_emergency.png'
                       loading='lazy'
                       width='56'
                       alt=''
                     />
                     <div className=' text-heading font-semibold'>
-                      Your own accountant
+                      Emergency support
                     </div>
                     <p className='text-body text-sm'>
-                      Your accountant, with help from a team and resources,
-                      provides personalized assistance for informed financial
-                      decisions.
+                      Letters from the IRS? Years of back taxes to be filed?
+                      Missing records? No matter what challenges your business
+                      is facing, Accountable Retrospective Accounting has you
+                      covered.
                     </p>
                   </div>
-                  <div className='max-w-[220px] flex flex-col items-center gap-y-3 text-center'>
+                  <div className='max-w-[248px] flex flex-col items-center gap-y-3 text-center'>
                     <img
-                      src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642510bd943fc89907d9e658_tax%202.png'
+                      src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/6427020c83bb0c51528e4bd7_cheap2.png'
                       loading='lazy'
                       width='56'
                       alt=''
                     />
                     <div className=' text-heading font-semibold'>
-                      Taxes handled, without stress
+                      Affordable Payment Plans
                     </div>
                     <p className='text-body text-sm'>
-                      By enrolling in the Essential Plan, we will assist you in
-                      relieving the stress related to taxes and provide constant
-                      peace of mind.
+                      We understand that catching up on bookkeeping can be
+                      costly. That's why we offer customised packages and
+                      flexible payment plans to help make it more manageable.
                     </p>
                   </div>
-                  <div className='max-w-[220px] flex flex-col items-center gap-y-3 text-center'>
+                  <div className='max-w-[248px] flex flex-col items-center gap-y-3 text-center'>
                     <img
-                      src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642510bd8054c53eac77d37c_verify%202.png'
+                      src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/6426f13db2096d417ae95205_fast.png'
                       loading='lazy'
                       width='56'
                       alt=''
                     />
                     <div className=' text-heading font-semibold'>
-                      Powerful financial reporting
+                      Swift Turnaround Times
                     </div>
                     <p className='text-body text-sm'>
-                      We help keep track of current and past performance for
-                      valuable insights to make informed financial decisions for
-                      your business.
-                    </p>
-                  </div>
-                  <div className='max-w-[220px] flex flex-col items-center gap-y-3 text-center'>
-                    <img
-                      src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642510bd658b1d109cf4e936_customer-service%202.png'
-                      loading='lazy'
-                      width='56'
-                      alt=''
-                    />
-                    <div className=' text-heading font-semibold'>
-                      Get answers in real-time
-                    </div>
-                    <p className='text-body text-sm'>
-                      Our AI chatbot can assist with tax compliance, financial
-                      planning, and accounting advice for quick and immediate
-                      answers.
+                      With our efficient service, we can complete months or
+                      years of overdue bookkeeping quickly, providing you with
+                      more time for your business and less stress associated
+                      with deadlines.
                     </p>
                   </div>
                 </div>
@@ -216,7 +156,89 @@ export default function RetroBkk() {
           </div>
         </div>
       </Group>
+      <Group key='features'>
+        <div className='mt-20 mb-[120px]'>
+          <div className='flex flex-col items-center max-w-[1064px] w-full mx-auto'>
+            <div className='flex flex-col text-center max-w-[620px] pb-20 '>
+              <h3 className='text-heading text-[40px] font-bold leading-tight'>
+                Features available to our catchup bookkeeping service
+              </h3>
+              <p className='text-xl text-body mt-[10px]'>
+                Finance for businesses, powered by real humans. We work round
+                the clock to assist you with anything you need.
+              </p>
+            </div>
+            <Group key='check grid'>
+              <Group key='first'>
+                <div className='border-t border-[#f2f2f2] pt-20 flex items-start justify-between w-full'>
+                  <div className='max-w-[364px] w-full flex flex-col'>
+                    <h3 className='mt-4 text-heading font-bold text-[32px]'>
+                      Catching Up on Your Accounting Records
+                    </h3>
+                    <p className='mt-2 text-body'>
+                      By catching up on your accounting records, you can gain a
+                      clear understanding of your finances, avoid penalties,
+                      save time and stress, make informed decisions, and receive
+                      expert support. Let our team take care of it for you.
+                    </p>
+                  </div>
+                  <div className='flex flex-col max-w-[530px] w-full gap-y-5'>
+                    <Check
+                      title='Get a Clear Picture of Your Finances'
+                      details="By catching up on two or more years of accounting records, you'll be able to see exactly where your money has been going and make informed decisions about your finances."
+                    />
+                    <Check
+                      title='Avoid Additional Penalties and Fees'
+                      details="Filing taxes late or incorrectly can lead to penalties and fees. By sorting out your retrospective accounting records, you'll be able to file your taxes accurately and on time, avoiding any unnecessary costs."
+                    />
+                    <Check
+                      title='Save Time and Stress'
+                      details='Receiving investigation letters from the tax authorities and trying to catch up on years of accounting records can be overwhelming and stressful. Let our team take care of it for you, saving you time and reducing your stress.'
+                    />
+                    <Check
+                      title='Make Better Financial Decisions'
+                      details="With up-to-date financial records, you'll be able to make better financial decisions for your business or personal life. You'll have a clear understanding of your financial situation, allowing you to plan for the future and make informed decisions."
+                    />
+                    <Check
+                      title='Get Expert Support'
+                      details="Our team of experienced accountants is here to provide expert support throughout the Catch Up Accounting process. We'll make sure your financial records are accurate and up to date, and we'll answer any questions or concerns you may have along the way."
+                    />
+                  </div>
+                </div>
+              </Group>
+              <Group key='second'>
+                <div className='border-t border-[#f2f2f2] pt-20 mt-20 flex items-start justify-between w-full'>
+                  <div className='max-w-[364px] w-full flex flex-col'>
+                    <h3 className='mt-4 text-heading font-bold text-[32px]'>
+                      Each Year, One Year-End Financial Package
+                    </h3>
+                    <p className='mt-2 text-body'>
+                      Get a year-end financial package for each year of
+                      retroactive accounting with our customised retroactive
+                      accounting and flexible payment plan.
+                    </p>
+                  </div>
+                  <div className='flex flex-col max-w-[530px] w-full gap-y-5'>
+                    <Check
+                      title='No-frills pricing'
+                      details='Like with our other bundles, enjoy stable pricing with Retroactive Bookkeeping with no additional charges, hourly rates, up charges, or hidden fees. Our fixed price structure motivates us to complete the work as fast as possible and our reputation, efficiently.'
+                    />
+                    <Check
+                      title='All your reports in one place'
+                      details='Say goodbye to scattered financial documents - our Year End Financial Package includes your IFRS compliant income statement, balance sheet, statement of cash flows, and notes to the accounts, all in one place.'
+                    />
 
+                    <Check
+                      title='Organised and Efficient'
+                      details='Our Year End Financial Package is designed to make catching up on years of financial records as efficient and organised as possible making it easy for you to understand your financial situation.'
+                    />
+                  </div>
+                </div>
+              </Group>
+            </Group>
+          </div>
+        </div>
+      </Group>
       <SupportCard />
       <Testimonials />
     </div>
