@@ -15,8 +15,6 @@ interface PanesProps {
 }
 
 export const Panes = ({ panes, active, handleChange }: PanesProps) => {
-  //todo make sure that the setactive prop is passed down as a prop
-
   return (
     <motion.div>
       <ul className='pane-conatiner'>
@@ -29,24 +27,7 @@ export const Panes = ({ panes, active, handleChange }: PanesProps) => {
                 key={pane.label}
               >
                 <div className='flex items-center gap-x-[10px]'>
-                  <span
-                    className={`pane-label ${
-                      active == pane.id && 'pane-label--active'
-                    }`}
-                  >
-                    {pane.label}
-                  </span>
-                  {!!pane.value?.toString() && (
-                    <span
-                      className={`pane-value ${
-                        active == pane.id
-                          ? 'pane-value--active'
-                          : 'pane-value--inactive'
-                      }`}
-                    >
-                      {pane.value}
-                    </span>
-                  )}
+                  <span className='pane-label'>{pane.label}</span>
                 </div>
               </motion.button>
               {active == pane.id && (

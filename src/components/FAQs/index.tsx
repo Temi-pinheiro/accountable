@@ -31,10 +31,10 @@ export const FaqsSection = () => {
     >
       <div className='max-w-[910px] mx-auto flex flex-col items-center'>
         <div className='flex flex-col items-center'>
-          <h4 className='text-sm max-w-[620px] border border-white py-1 px-[10px] rounded-full w-fit'>
+          <h4 className='text-xs border border-white py-1 px-[10px] rounded-full w-fit'>
             FAQS
           </h4>
-          <h1 className='text-[40px] max-w-[620px] font-black text-center leading-tight mt-4'>
+          <h1 className='text-[40px] max-w-[620px] font-bold text-center leading-tight mt-4'>
             Some recurring questions we get asked a lot...
           </h1>
           <p className='text-xl max-w-[620px] text-center mt-[10px]'>
