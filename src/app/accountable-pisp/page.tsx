@@ -70,52 +70,34 @@ export default function AccPISP() {
                   the clock to assist you with anything you need.
                 </p>
               </div>
-              <div className='grid grid-cols-2 gap-x-6 gap-y-8 max-w-[924px]'>
-                <div className='flex flex-col p-6 rounded-lg border border-[#e8ecfc] bg-white'>
-                  <div className='w-10 h-10 rounded-full flex items-center justify-center border-[#8a9ff2] text-[#8a9ff2] border'>
-                    <div className='text-block-16'>01</div>
-                  </div>
-                  <h1 className='mt-3 font-semibold text-heading'>Analysis</h1>
-                  <p className='text-body text-sm mt-2'>
-                    We start by analyzing your current processes to identify
-                    areas that needs to be optimized and improved.{' '}
-                  </p>
+              <Group key='grided'>
+                <div className='grid grid-cols-2 gap-x-6 gap-y-8 max-w-[924px] mt-20'>
+                  <GridCard
+                    id='01'
+                    title='Analysis'
+                    details='We start by analyzing your current processes to identify
+                      areas that needs to be optimized and improved.'
+                  />
+                  <GridCard
+                    id='02'
+                    title='Planning'
+                    details=' We work with you to develop a customized process
+                      improvement plan that meets your specific goals and needs.'
+                  />
+                  <GridCard
+                    id='03'
+                    title='Implementation'
+                    details=' We help you implement your process improvement plan,
+                      providing support and guidance every step of the way.'
+                  />
+                  <GridCard
+                    id='04'
+                    title='Monitoring'
+                    details=' We continue to monitor your processes after implementation
+                      to ensure continuous improvement and success.'
+                  />
                 </div>
-                <div className='flex flex-col p-6 rounded-lg border border-[#e8ecfc] bg-white'>
-                  <div className='w-10 h-10 rounded-full flex items-center justify-center border-[#8a9ff2] text-[#8a9ff2] border'>
-                    <div className='text-block-16'>02</div>
-                  </div>
-                  <h1 className='mt-3 font-semibold text-heading'>Planning</h1>
-                  <p className='text-body text-sm mt-2'>
-                    We work with you to develop a customized process improvement
-                    plan that meets your specific goals and needs.
-                  </p>
-                </div>
-                <div className='flex flex-col p-6 rounded-lg border border-[#e8ecfc] bg-white'>
-                  <div className='w-10 h-10 rounded-full flex items-center justify-center border-[#8a9ff2] text-[#8a9ff2] border'>
-                    <div className='text-block-16'>03</div>
-                  </div>
-                  <h1 className='mt-3 font-semibold text-heading'>
-                    Implementation
-                  </h1>
-                  <p className='text-body text-sm mt-2'>
-                    We help you implement your process improvement plan,
-                    providing support and guidance every step of the way.
-                  </p>
-                </div>
-                <div className='flex flex-col p-6 rounded-lg border border-[#e8ecfc] bg-white'>
-                  <div className='w-10 h-10 rounded-full flex items-center justify-center border-[#8a9ff2] text-[#8a9ff2] border'>
-                    <div className='text-block-16'>04</div>
-                  </div>
-                  <h1 className='mt-3 font-semibold text-heading'>
-                    Monitoring
-                  </h1>
-                  <p className='text-body text-sm mt-2'>
-                    We continue to monitor your processes after implementation
-                    to ensure continuous improvement and success.
-                  </p>
-                </div>
-              </div>
+              </Group>
               <div className='mt-[80px]'>
                 <a
                   href='https://calendar.app.google/Z9JQd7RHr52r4uoC9'
@@ -340,3 +322,23 @@ export default function AccPISP() {
     </div>
   );
 }
+
+const GridCard = ({
+  id,
+  title,
+  details,
+}: {
+  id: string;
+  details: string;
+  title: string;
+}) => {
+  return (
+    <div className='flex flex-col p-6 rounded-lg border border-[#e8ecfc] bg-white'>
+      <div className='w-10 h-10 rounded-full flex items-center justify-center border-[#8a9ff2] text-[#8a9ff2] border'>
+        <div className='text-block-16'>{id}</div>
+      </div>
+      <h1 className='mt-3 font-semibold text-heading'>{title}</h1>
+      <p className='text-body text-sm mt-2'>{details}</p>
+    </div>
+  );
+};
