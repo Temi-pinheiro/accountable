@@ -7,6 +7,7 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    darkMode: ['class', '[data-mode="dark"]'],
     extend: {
       screens: {
         'fr': '1100px',

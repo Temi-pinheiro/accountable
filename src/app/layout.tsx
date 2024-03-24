@@ -4,6 +4,7 @@ import './globals.css';
 import { Footer, MobileNav, NavBar, ScrollingNav } from '~/components';
 import { MobileFooter } from '~/components/Footer/mobile';
 import { useLayoutEffect } from 'react';
+import ThemeProvider from '~/providers/ThemeProvider';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -22,14 +23,16 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={inter.className}>
-        <nav className='relative'>
-          <MobileNav />
-          <NavBar />
-          <ScrollingNav />
-        </nav>
-        <main id='main'>{children}</main>
-        <MobileFooter />
-        <Footer />
+        <ThemeProvider>
+          <nav className='relative'>
+            <MobileNav />
+            <NavBar />
+            <ScrollingNav />
+          </nav>
+          <main id='main'>{children}</main>
+          <MobileFooter />
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
