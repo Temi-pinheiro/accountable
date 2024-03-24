@@ -1,6 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import { Metadata } from 'next';
-import { Group, SectionHeading, SupportCard, Testimonials } from '~/components';
+import {
+  Check,
+  Group,
+  SectionHeading,
+  SupportCard,
+  Testimonials,
+} from '~/components';
 import { Figtree } from 'next/font/google';
 
 export const metadata: Metadata = {
@@ -17,51 +23,165 @@ export default function AccFMCC() {
       )}
     >
       <Group key='home-hero'>
-        <div className='pt-24 pb-[120px] max-w-[1230px] mx-auto'>
-          <div className='grid grid-cols-2 w-full items-center'>
-            <div className='flex flex-col'>
-              <p className='text-midnight'>Accountable FMCC</p>
-              <h1 className='text-heading text-5xl leading-snug mt-2 max-w-[607px] font-bold'>
-                To make creative careers work, we need to talk about money.
-                time.
-              </h1>
-              <p className='mt-4 max-w-[460px] text-body'>
-                From negotiating better financial terms for your deals, to
-                tracking payments, managing your taxes, royalty statement audits
-                and getting the right financial cum investment advice, we’ve got
-                you covered.
-              </p>
+        <div className='bg-[#f7f8fa] w-full'>
+          <div className='pt-24 pb-[120px] max-w-[1230px] mx-auto'>
+            <div className='grid grid-cols-2 w-full items-center'>
+              <div className='flex flex-col'>
+                <p className='text-midnight'>Accountable FMCC</p>
+                <h1 className='text-heading text-5xl leading-snug mt-2 max-w-[607px] font-bold'>
+                  To make creative careers work, we need to talk about money.
+                  time.
+                </h1>
+                <p className='mt-4 max-w-[460px] text-body'>
+                  From negotiating better financial terms for your deals, to
+                  tracking payments, managing your taxes, royalty statement
+                  audits and getting the right financial cum investment advice,
+                  we’ve got you covered.
+                </p>
 
-              <div className='mt-10 flex items-center gap-x-4'>
-                <a
-                  href='https://calendar.app.google/Z9JQd7RHr52r4uoC9'
-                  target='_blank'
-                  className='bg-midnight text-white py-3 px-6 rounded-xl'
-                >
-                  Book a meeting
-                </a>
-                <a
-                  href='#'
-                  className='border border-midnight text-midnight py-3 px-6 rounded-xl'
-                >
-                  Watch a demo
-                </a>
+                <div className='mt-10 flex items-center gap-x-4'>
+                  <a
+                    href='https://calendar.app.google/Z9JQd7RHr52r4uoC9'
+                    target='_blank'
+                    className='bg-midnight text-white py-3 px-6 rounded-xl'
+                  >
+                    Book a meeting
+                  </a>
+                  <a
+                    href='#'
+                    className='border border-midnight text-midnight py-3 px-6 rounded-xl'
+                  >
+                    Watch a demo
+                  </a>
+                </div>
               </div>
-            </div>
-            <div>
-              <img
-                src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642e6294e42d3191d259a973_fmcc_img.png'
-                loading='lazy'
-                width='491'
-                sizes='(max-width: 479px) 100vw, (max-width: 767px) 92vw, 491px'
-                alt=''
-                srcSet='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642e6294e42d3191d259a973_fmcc_img-p-500.png 500w, https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642e6294e42d3191d259a973_fmcc_img-p-800.png 800w, https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642e6294e42d3191d259a973_fmcc_img.png 982w'
-              />
+              <div>
+                <img
+                  src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642e6294e42d3191d259a973_fmcc_img.png'
+                  loading='lazy'
+                  width='491'
+                  sizes='(max-width: 479px) 100vw, (max-width: 767px) 92vw, 491px'
+                  alt=''
+                  srcSet='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642e6294e42d3191d259a973_fmcc_img-p-500.png 500w, https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642e6294e42d3191d259a973_fmcc_img-p-800.png 800w, https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642e6294e42d3191d259a973_fmcc_img.png 982w'
+                />
+              </div>
             </div>
           </div>
         </div>
       </Group>
-
+      <Group key='how it works'>
+        <div className='mt-20 mb-[120px]'>
+          <div className='flex flex-col items-center max-w-[1064px] w-full mx-auto'>
+            <SectionHeading
+              heading='Some headings we want to have should be here.'
+              paragraph='Finance for businesses, powered by real humans. We work round the clock to assist you with anything you need.'
+              title='HOW IT WORKS'
+            />
+            <Group key='check grid'>
+              <Group key='first'>
+                <div className='border-t border-[#f2f2f2] pt-20 flex items-start justify-between w-full mt-20'>
+                  <div className='flex flex-col max-w-[524px] w-full gap-y-5'>
+                    <h3 className='text-heading font-bold text-2xl pb-10'>
+                      Get the best out of your deals
+                    </h3>
+                    <Check
+                      title='Financial Deal Negotiation'
+                      details="Negotiating better financial terms for your creative deals can be a challenge, but our Accountable FMCC program is here to help. We'll work with you to negotiate deals that are fair and favourable to you and your career."
+                    />
+                    <Check
+                      title='Contract Review & Analysis'
+                      details="We'll review and analyse contracts on your behalf, ensuring that they are fair and favourable to your career and financial situation."
+                    />
+                    <Check
+                      title='Ongoing Support'
+                      details='Our program will provide ongoing support throughout the negotiation process, ensuring that you have the resources and guidance you need to make informed financial decisions for your creative business.'
+                    />
+                  </div>
+                  <div className='max-w-[460px] w-full flex flex-col'>
+                    <img
+                      src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642e7f24323b3361b2ef35b2_joeboy.png'
+                      loading='lazy'
+                      width='460'
+                      sizes='(max-width: 479px) 100vw, (max-width: 767px) 39vw, 41vw'
+                      alt=''
+                      srcSet='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642e7f24323b3361b2ef35b2_joeboy-p-500.png 500w, https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642e7f24323b3361b2ef35b2_joeboy-p-800.png 800w, https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642e7f24323b3361b2ef35b2_joeboy.png 921w'
+                    />
+                  </div>
+                </div>
+              </Group>
+              <Group key='second'>
+                <div className='border-t border-[#f2f2f2] pt-20 mt-20 flex items-center justify-between w-full'>
+                  <div className='max-w-[460px] w-full flex flex-col'>
+                    <img
+                      src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642e7f245b124550f6c94ccf_fave.png'
+                      loading='lazy'
+                      width='460'
+                      sizes='(max-width: 479px) 100vw, (max-width: 767px) 39vw, 41vw'
+                      alt=''
+                      srcSet='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642e7f245b124550f6c94ccf_fave-p-500.png 500w, https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642e7f245b124550f6c94ccf_fave-p-800.png 800w, https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642e7f245b124550f6c94ccf_fave.png 921w'
+                    />
+                  </div>
+                  <div className='flex flex-col max-w-[524px] w-full gap-y-5'>
+                    <h3 className='text-heading font-bold text-2xl pb-10'>
+                      Get the compensation you deserve
+                    </h3>
+                    <Check
+                      title='Income tracking & Management'
+                      details="Managing income and royalties can be time-consuming and stressful, but it's crucial for the success of your creative business. Our Accountable FMCC program will help you track and manage income and payments efficiently, so you can focus on your craft."
+                    />
+                    <Check
+                      title='Royalty Statements Audits'
+                      details="Royalty statements can be confusing, and it's not always clear whether you're getting paid what you're owed. Our Accountable FMCC program will perform thorough royalty statement audits to ensure you're getting paid what you deserve."
+                    />
+                    <Check
+                      title='Royalty Recovery'
+                      details="In addition to performing thorough royalty statement audits, our program will also work with your legal team to recover any unpaid royalties or other income that you're owed. We'll take the necessary steps to ensure that you receive the compensation you deserve for your creative work."
+                    />
+                  </div>
+                </div>
+              </Group>
+              <Group key='third'>
+                <div className='border-t border-[#f2f2f2] pt-20 mt-20 flex justify-between items-center w-full'>
+                  <div className='flex flex-col max-w-[524px] w-full gap-y-5'>
+                    <h3 className='text-heading font-bold text-2xl pb-10'>
+                      Taxes & Investments
+                    </h3>
+                    <Check
+                      title='Tax Planning & Management'
+                      details='Taxes can be complex and overwhelming, especially for creatives who may have unique tax situations. Our Accountable FMCC program will provide you with expert tax planning and management services to ensure you stay compliant and avoid costly mistakes.'
+                    />
+                    <Check
+                      title='Financial & Investment Advice'
+                      details='Creatives often have unique financial situations, and it can be challenging to know how to invest for the future. Our Accountable FMCC program provides customised financial and investment advice to help you build wealth and secure your financial future.'
+                    />
+                    <Check
+                      title='Cashflow & Retirement Planning'
+                      details="Creatives often have unique cash flow and retirement planning needs. Our program will help you manage cash flow effectively, ensuring that you have the funds you need to pursue your creative goals. We'll provide customised retirement planning advice and services, so you can enjoy a secure and comfortable retirement."
+                    />
+                  </div>
+                  <div className='max-w-[460px] w-full flex flex-col'>
+                    <img
+                      src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642e7f245b124550f6c94ccf_fave.png'
+                      loading='lazy'
+                      width='460'
+                      sizes='(max-width: 479px) 100vw, (max-width: 767px) 39vw, 41vw'
+                      alt=''
+                      srcSet='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642e7f245b124550f6c94ccf_fave-p-500.png 500w, https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642e7f245b124550f6c94ccf_fave-p-800.png 800w, https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642e7f245b124550f6c94ccf_fave.png 921w'
+                    />
+                  </div>
+                </div>
+              </Group>
+            </Group>
+            <a
+              href='https://calendar.app.google/Z9JQd7RHr52r4uoC9'
+              target='_blank'
+              className='py-3 px-4 rounded-xl bg-midnight text-white mt-20'
+            >
+              Talk to an expert
+            </a>
+          </div>
+        </div>
+      </Group>
       <SupportCard />
       <Testimonials />
     </div>
