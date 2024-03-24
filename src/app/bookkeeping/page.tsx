@@ -1,6 +1,13 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @next/next/no-img-element */
 import { Metadata } from 'next';
-import { Group, SectionHeading, SupportCard, Testimonials } from '~/components';
+import {
+  Check,
+  Group,
+  SectionHeading,
+  SupportCard,
+  Testimonials,
+} from '~/components';
 import { Figtree } from 'next/font/google';
 import Link from 'next/link';
 const figtree = Figtree({ subsets: ['latin'] });
@@ -108,12 +115,59 @@ export default function Bookkeeping() {
                   </Link>
                 </div>
               </div>
-              <div className='mt-[80px]'></div>
+              <Group key='monthlY'>
+                <div className='mt-[80px] w-full flex flex-col items-center max-w-[1190px]'>
+                  <div className='flex flex-col text-center max-w-[618px]'>
+                    <h2 className='text-heading text-[40px] font-bold '>
+                      How monthly bookkeeping works
+                    </h2>
+                    <p className='text-body text-xl mt-[10px] '>
+                      Finance for businesses, powered by real humans. We work
+                      round the clock to assist you with anything you need.
+                    </p>
+                  </div>
+                  <section className='flex items-center gap-x-[128px] mt-16 w-full'>
+                    <div className='max-w-[580px] w-full shrink-0'>
+                      <img
+                        src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/6424318c74533afda59c0e2b_signup.png'
+                        loading='lazy'
+                        width='580'
+                        sizes='(max-width: 479px) 104.703125px, (max-width: 767px) 42vw, (max-width: 991px) 46vw, 49vw'
+                        alt=''
+                        srcSet='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/6424318c74533afda59c0e2b_signup-p-500.png 500w, https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/6424318c74533afda59c0e2b_signup-p-800.png 800w, https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/6424318c74533afda59c0e2b_signup-p-1080.png 1080w, https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/6424318c74533afda59c0e2b_signup.png 1160w'
+                      />
+                    </div>
+                    <Group key='steps'>
+                      <div className='w-full flex flex-col gap-y-5'>
+                        <Step
+                          details="Get started with our Monthly Bookkeeping Services by signing up and activating your account. Our quick and easy process ensures you're up and running in no time!"
+                          title='Create your account'
+                          id='01'
+                        />
+                        <Step
+                          details="Link your bank accounts to our secure platform, and we'll take care of the rest. Our state-of-the-art technology ensures that all your data is secure and up-to-date."
+                          title='Connect your bank accounts'
+                          id='02'
+                        />
+                        <Step
+                          details='Our expert bookkeepers will take care of your bookkeeping needs, providing you with accurate and reliable financial records. You’ll never have to worry about your financial records again.'
+                          title='We do your bookkeeping'
+                          id='03'
+                        />
+                        <Step
+                          details='Stay up-to-date with timely financial reports that give you insights into your business performance. Our customised reports are designed to help you make informed decisions.'
+                          title='Get timely financial reports'
+                          id='04'
+                        />
+                      </div>
+                    </Group>
+                  </section>
+                </div>
+              </Group>
             </div>
           </div>
         </div>
       </Group>
-
       <Group key='benefits'>
         <div className='mt-[120px] bg-[#fcfeff]'>
           <div className=' pb-[80px] max-w-[1230px] mx-auto flex flex-col items-center'>
@@ -212,9 +266,139 @@ export default function Bookkeeping() {
           </div>
         </div>
       </Group>
+      <Group key='features'>
+        <div className='mt-20 mb-[120px]'>
+          <div className='flex flex-col items-center max-w-[1230px] w-full mx-auto'>
+            <div className='flex flex-col text-center max-w-[620px] pb-20 '>
+              <h3 className='text-heading text-[40px] font-bold leading-tight'>
+                Features available to our bookeeping customers
+              </h3>
+              <p className='text-xl text-body mt-[10px]'>
+                Finance for businesses, powered by real humans. We work round
+                the clock to assist you with anything you need.
+              </p>
+            </div>
+            <Group key='check grid'>
+              <Group key='first'>
+                <div className='border-t border-[#f2f2f2] pt-20 flex items-start justify-between w-full'>
+                  <div className='max-w-[364px] w-full flex flex-col'>
+                    <span className='py-2 px-6 text-body border border-body rounded-full w-fit'>
+                      Bookkeeping
+                    </span>
+                    <h3 className='mt-4 text-heading font-bold text-[32px]'>
+                      Monthly bookkeeping with unlimited access to expert help
+                    </h3>
+                    <p className='mt-2 text-body'>
+                      Let’s tie some sort of text here to give a general
+                      overview of this featue.
+                    </p>
+                  </div>
+                  <div className='flex flex-col max-w-[530px] w-full gap-y-5'>
+                    <Check
+                      title='Consistent Check-ins with Real Humans'
+                      details='Enjoy frequent communication and fast, professional support from your own dedicated accountant and our team of experts. We respond in 24 hours or less.'
+                    />
+                    <Check
+                      title='AI-Powered Virtual Financial Advisor'
+                      details='Do you need real time guidance or answers? We got you covered. Our intelligent chatbot can answer financial questions and provide personalised guidance, similar to a virtual financial advisor.'
+                    />
+                    <Check
+                      title='Quarterly Business Review (QBR) Sessions'
+                      details="Schedule meetings with your accountant, their supervisor and a management team member every quarter to review your business's financial performance, identify areas of improvement, and develop a customised plan for success."
+                    />
+                  </div>
+                </div>
+              </Group>
+              <Group key='second'>
+                <div className='border-t border-[#f2f2f2] pt-20 mt-20 flex items-start justify-between w-full'>
+                  <div className='max-w-[364px] w-full flex flex-col'>
+                    <span className='py-2 px-6 text-body border border-body rounded-full w-fit'>
+                      Tax Filing & Advisory
+                    </span>
+                    <h3 className='mt-4 text-heading font-bold text-[32px]'>
+                      Eliminate the hassle of tax filing with our streamlined
+                      solution{' '}
+                    </h3>
+                    <p className='mt-2 text-body'>
+                      Let’s tie some sort of text here to give a general
+                      overview of this featue.
+                    </p>
+                  </div>
+                  <div className='flex flex-col max-w-[530px] w-full gap-y-5'>
+                    <Check
+                      title='Never Miss a Tax Deadline'
+                      details="We understand that tax deadlines can be overwhelming, which is why we're here to help. Our team of experts will keep you on track, ensuring that you never miss a deadline again. We provide timely reminders and offer guidance to help you stay organised and avoid any last-minute stress."
+                    />
+                    <Check
+                      title='Accounting, With Taxes in Mind'
+                      details="At Accountable, we don't just crunch numbers, we understand the importance of taxes in your financial planning. We provide comprehensive accounting services that take into account your tax obligations, ensuring that your finances are optimised for maximum tax savings."
+                    />
+                    <Check
+                      title='Tax Support All Year Long'
+                      details="Tax season doesn't just last for a few months – it's a year-round commitment. That's why we offer tax support all year long. Our team is available to answer any questions you may have about taxes, provide ongoing guidance, and help you plan for the future. With our help, you can be confident that you're always on top of your tax obligations, no matter the time of year."
+                    />
+                  </div>
+                </div>
+              </Group>
+              <Group key='third'>
+                <div className='border-t border-[#f2f2f2] pt-20 mt-20 flex items-start justify-between w-full'>
+                  <div className='max-w-[364px] w-full flex flex-col'>
+                    <span className='py-2 px-6 text-body border border-body rounded-full w-fit'>
+                      Financial Reporting
+                    </span>
+                    <h3 className='mt-4 text-heading font-bold text-[32px]'>
+                      Get immediate access to crucial business insights
+                    </h3>
+                    <p className='mt-2 text-body'>
+                      Let’s tie some sort of text here to give a general
+                      overview of this featue.
+                    </p>
+                  </div>
+                  <div className='flex flex-col max-w-[530px] w-full gap-y-5'>
+                    <Check
+                      title='Stay On Top of Your Money'
+                      details='Take control of your finances effortlessly with our platform. Easily track expenses, monitor cash flow and get real-time updates. We will provide the data you need to grow your business.'
+                    />
+                    <Check
+                      title='Simple Financial Management, Anytime, Anywhere'
+                      details="Don't waste time learning new software. Our platform is designed for simplicity, allowing you to easily view your financials, update information, or check in with your team from anywhere, at any time. Manage your finances with ease and focus on what matters most - growing your business."
+                    />
+                    <Check
+                      title='Know your tax filing status per time'
+                      details='Our platform provides you with the tools you need to easily track your tax obligations and deadlines, ensuring you never miss a filing deadline. With real-time updates and notifications, you can stay on top of your tax filing status and avoid any last-minute stress. Stay organized and informed with our tax filing status tracking system.'
+                    />
+                  </div>
+                </div>
+              </Group>
+            </Group>
+          </div>
+        </div>
+      </Group>
 
       <SupportCard />
       <Testimonials />
     </div>
   );
 }
+
+export const Step = ({
+  id,
+  title,
+  details,
+}: {
+  id: string;
+  title: string;
+  details: string;
+}) => (
+  <div className=' flex gap-x-20 w-full'>
+    <div className='flex flex-col gap-y-3 items-center '>
+      <span className='text-midnight text-xl'>{id}</span>
+      <div className='w-[1px] bg-midnight h-full'></div>
+    </div>
+
+    <div className='flex flex-col gap-y-5 w-full pb-3'>
+      <h4 className='text-heading text-xl font-bold'>{title}</h4>
+      <p className='text-body text-sm'>{details}</p>
+    </div>
+  </div>
+);

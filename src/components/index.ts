@@ -14,3 +14,4 @@ export * from './Testimonials';
 export * from './Vision';
 export * from './Panes';
 export * from './SectionHeading';
+export * from './Check';
