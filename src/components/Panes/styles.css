@@ -3,7 +3,7 @@
 }
 
 .pane {
-  @apply relative py-4 pb-3 first-of-type:pl-4 last-of-type:pr-4;
+  @apply relative md:py-4 pb-3 first-of-type:pl-4 last-of-type:pr-4;
 }
 
 .smooth {
@@ -11,7 +11,7 @@
 }
 
 .pane-label {
-  @apply text-lg font-medium text-white transition duration-200 ease-in-out py-4 px-10;
+  @apply md:text-lg font-medium text-white transition duration-200 ease-in-out py-2 md:py-4 px-10;
 }
 
 .pane-underline {

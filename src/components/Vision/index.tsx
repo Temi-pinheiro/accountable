@@ -11,7 +11,7 @@ export const VisionPane = () => {
     { label: 'Our Mission', id: 'mission', show: true },
   ];
   return (
-    <div className='py-[120px] mt-6 w-full bg-midnight'>
+    <div className='py-10 md:py-[120px] mt-6 w-full bg-midnight'>
       <div className='flex flex-col items-center text-center max-w-[940px] mx-auto'>
         <Panes panes={panes} active={active} handleChange={setActive} />
         <AnimatePresence mode={'wait'}>
@@ -21,7 +21,7 @@ export const VisionPane = () => {
             animate='animate'
             exit='exit'
             initial='initial'
-            className='text-center text-white text-[32px] font-bold mt-14'
+            className='text-center text-white text-xl md:text-[32px] font-bold mt-14 max-md:px-6'
           >
             {active == 'vision'
               ? 'Our vision is to be the preferred professional service firm, making exceptional accounting, financial and management consulting services accessible to businesses.'

@@ -17,16 +17,16 @@ export default function AboutUs() {
       )}
     >
       <Group key='home-hero'>
-        <div className='pt-24 flex flex-col items-center'>
+        <div className='pt-12 md:pt-24 flex flex-col items-center'>
           <div className='flex flex-col items-center text-center'>
-            <h1 className='text-[#1d1e20] font-bold text-[64px] max-w-[720px] leading-tight'>
+            <h1 className='text-[#1d1e20] font-bold text-[32px] md:text-[64px] max-w-[720px] leading-tight'>
               We are Accountable, your trusted advisers
             </h1>
           </div>
         </div>
       </Group>
       <Group key='image galler'>
-        <div className='px-4 mt-[120px]'>
+        <div className='max-md:hidden px-4 mt-[120px]'>
           <img
             src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642e6de5e42d3132405a5bb7_work-gallery.png'
             loading='lazy'
@@ -37,18 +37,18 @@ export default function AboutUs() {
         </div>
       </Group>
       <Group key='who we are'>
-        <div className='max-w-[1240px] mx-auto mt-[184px] pb-12'>
-          <div className='flex items-start justify-between'>
+        <div className='max-w-[1240px] mx-auto mt-[100px] md:mt-[184px] pb-12 max-md:px-6'>
+          <div className='flex max-md:flex-col items-start justify-between'>
             <div className='max-w-[467px]'>
               <div className='w-fit text-sm border rounded-full text-midnight border-midnight py-1 px-3 font-medium'>
                 WHO WE ARE
               </div>
-              <h1 className='text-heading text-[40px] font-bold mt-1'>
+              <h1 className='text-heading text-3xl md:text-[40px] font-bold mt-1'>
                 A nonpareil team of finance experts
               </h1>
             </div>
             <div className='max-w-[690px] text-body font-medium'>
-              <p className='who-we-are-paragraph'>
+              <p className='who-we-are-paragraph max-md:mt-4'>
                 We are a nonpareil team of professionals providing high
                 value-added accounting, tax, compliance, process improvement and
                 financial advisory services to growth-focused businesses.
@@ -72,7 +72,7 @@ export default function AboutUs() {
       </Group>
       <VisionPane />
       <Group key='values'>
-        <div className='pt-24 w-full'>
+        <div className='pt-12 md:pt-24 w-full'>
           <div className='max-w-[940px] mx-auto w-full flex flex-col py-[72px] items-center'>
             <Group key='heading '>
               <div className='mt-5 flex flex-col items-center'>
@@ -85,7 +85,7 @@ export default function AboutUs() {
               </div>
             </Group>
             <Group key='grid'>
-              <div className='grid grid-cols-2 mt-20 gap-x-[84px] gap-y-14 max-w-[836px]'>
+              <div className='grid md:grid-cols-2 mt-10 md:mt-20 gap-x-8 md:gap-x-[84px] gap-y-14 max-w-[836px] max-md:px-6'>
                 <div className='py-6 px-8 rounded-[1rem] bg-[#e8f3fe]'>
                   <div>
                     <img
@@ -178,14 +178,14 @@ export default function AboutUs() {
       <Group key='with us'>
         <div
           style={{ backgroundImage: 'url(/faqsbg.png)' }}
-          className='mt-[120px] py-[64px] bg-cover bg-center text-white'
+          className=' mt-20 md:mt-[120px] py-[64px] bg-cover bg-center text-white'
         >
-          <div className='max-w-[960px] mx-auto flex flex-col items-center'>
+          <div className='max-w-[960px] mx-auto flex flex-col items-center max-md:px-6'>
             <div className='flex flex-col items-center'>
               <h4 className='text-xs border border-[#868ca6] text-[#868ca6] py-1 px-[10px] rounded-full w-fit'>
                 WORK WITH US
               </h4>
-              <h1 className='text-[40px] font-medium text-center leading-tight mt-8'>
+              <h1 className='text-2xl md:text-[40px] font-medium text-center leading-tight mt-8'>
                 At Accountable, we are helping businesses and individuals stay
                 on top of their financial accounting goals. Join the winning
                 team{' '}
