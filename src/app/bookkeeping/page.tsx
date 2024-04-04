@@ -19,18 +19,19 @@ export const metadata: Metadata = {
 export default function Bookkeeping() {
   return (
     <div
-      className={[figtree.className, 'flex min-h-screen flex-col pt-24'].join(
-        ' '
-      )}
+      className={[
+        figtree.className,
+        'flex min-h-screen flex-col pt-10 md:pt-24',
+      ].join(' ')}
     >
       <Group key='home-hero'>
-        <div className='pt-24 pb-[120px] max-w-[1230px] mx-auto'>
-          <div className='grid grid-cols-2 w-full items-center'>
-            <div className='flex flex-col'>
+        <div className='pt-16 md:pt-24 pb-20 md:pb-[120px] max-w-[1230px] mx-auto max-md:px-6'>
+          <div className=' grid max-md:flex flex-col grid-cols-2 w-full items-center'>
+            <div className='flex flex-col max-md:items-center max-md:text-center'>
               <p className='text-midnight'>
                 Start tracking your finances like a pro today.
               </p>
-              <h1 className='text-heading text-5xl leading-snug mt-2 max-w-[607px] font-bold'>
+              <h1 className='text-heading text-3xl md:text-5xl leading-none md:leading-snug mt-2 max-w-[607px] font-bold'>
                 Join the new economy - Outsource Your Accounting, Get Your Own
                 Accountant
               </h1>
@@ -55,7 +56,7 @@ export default function Bookkeeping() {
                 </a>
               </div>
             </div>
-            <div>
+            <div className='max-md:mt-20'>
               <img
                 src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642ea0ce56bfe25bf5cc59b4_bookkeeping_img.png'
                 loading='lazy'
@@ -69,15 +70,15 @@ export default function Bookkeeping() {
         </div>
       </Group>
       <Group key='how it works'>
-        <div className='mt-[120px] bg-[#f7f9fb]'>
-          <div className='pt-[120px] pb-[160px] max-w-[1230px] mx-auto'>
+        <div className='md:mt-[120px] bg-[#f7f9fb]'>
+          <div className='pt-[120px] pb-20 md:pb-[160px] max-w-[1230px] mx-auto'>
             <div className='flex flex-col items-center'>
               <SectionHeading
                 title='HOW IT WORKS'
                 heading='Need historical Bookeeping?'
                 paragraph='Finance for businesses, powered by real humans. We work round the clock to assist you with anything you need.'
               />
-              <div className='grid grid-cols-2 gap-x-6 gap-y-8 max-w-[924px] mt-[80px]'>
+              <div className='grid md:grid-cols-2 gap-x-6 gap-y-8 max-w-[924px] mt-[80px] max-md:px-6'>
                 <div className='flex flex-col p-6 rounded-lg border border-[#e8ecfc] bg-white'>
                   <div className='w-10 h-10 rounded-full flex items-center justify-center border-[#8a9ff2] text-[#8a9ff2] border'>
                     <div className='text-block-16'>01</div>
@@ -116,7 +117,7 @@ export default function Bookkeeping() {
                 </div>
               </div>
               <Group key='monthlY'>
-                <div className='mt-[80px] w-full flex flex-col items-center max-w-[1190px]'>
+                <div className='mt-[80px] w-full flex flex-col items-center max-w-[1190px] max-md:px-6'>
                   <div className='flex flex-col text-center max-w-[618px]'>
                     <h2 className='text-heading text-[40px] font-bold '>
                       How monthly bookkeeping works
@@ -126,7 +127,7 @@ export default function Bookkeeping() {
                       round the clock to assist you with anything you need.
                     </p>
                   </div>
-                  <section className='flex items-center gap-x-[128px] mt-16 w-full'>
+                  <section className='flex max-md:flex-col gap-y-10 items-center gap-x-[128px] mt-16 w-full'>
                     <div className='max-w-[580px] w-full shrink-0'>
                       <img
                         src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/6424318c74533afda59c0e2b_signup.png'
@@ -170,7 +171,7 @@ export default function Bookkeeping() {
       </Group>
       <Group key='benefits'>
         <div className='mt-[120px] bg-[#fcfeff]'>
-          <div className=' pb-[80px] max-w-[1230px] mx-auto flex flex-col items-center'>
+          <div className=' pb-[80px] max-w-[1230px] mx-auto flex flex-col items-center max-md:px-6'>
             <SectionHeading
               title='BENEFITS'
               heading='Benefits of using Accountable for your bookkeeping'
@@ -178,8 +179,8 @@ export default function Bookkeeping() {
             />
             <div className='flex flex-col items-center justify-between max-w-[1112px] w-full mt-[82px]'>
               <Group key='benefits grid'>
-                <div className='flex items-center justify-between w-full'>
-                  <div className='max-w-[220px] flex flex-col items-center gap-y-3 text-center'>
+                <div className='flex max-md:flex-col gap-y-10 items-center justify-between w-full'>
+                  <div className='md:max-w-[220px] flex flex-col items-center gap-y-3 text-center'>
                     <img
                       src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642510bdb6ff9a11f9016272_accounting%202.png'
                       loading='lazy'
@@ -195,7 +196,7 @@ export default function Bookkeeping() {
                       decisions.
                     </p>
                   </div>
-                  <div className='max-w-[220px] flex flex-col items-center gap-y-3 text-center'>
+                  <div className='md:max-w-[220px] flex flex-col items-center gap-y-3 text-center'>
                     <img
                       src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642510bd943fc89907d9e658_tax%202.png'
                       loading='lazy'
@@ -211,7 +212,7 @@ export default function Bookkeeping() {
                       peace of mind.
                     </p>
                   </div>
-                  <div className='max-w-[220px] flex flex-col items-center gap-y-3 text-center'>
+                  <div className='md:max-w-[220px] flex flex-col items-center gap-y-3 text-center'>
                     <img
                       src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642510bd8054c53eac77d37c_verify%202.png'
                       loading='lazy'
@@ -227,7 +228,7 @@ export default function Bookkeeping() {
                       your business.
                     </p>
                   </div>
-                  <div className='max-w-[220px] flex flex-col items-center gap-y-3 text-center'>
+                  <div className='md:max-w-[220px] flex flex-col items-center gap-y-3 text-center'>
                     <img
                       src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642510bd658b1d109cf4e936_customer-service%202.png'
                       loading='lazy'
@@ -268,32 +269,32 @@ export default function Bookkeeping() {
       </Group>
       <Group key='features'>
         <div className='mt-20 mb-[120px]'>
-          <div className='flex flex-col items-center max-w-[1230px] w-full mx-auto'>
+          <div className='flex flex-col items-center max-w-[1230px] w-full mx-auto max-md:px-6'>
             <div className='flex flex-col text-center max-w-[620px] pb-20 '>
-              <h3 className='text-heading text-[40px] font-bold leading-tight'>
+              <h3 className='text-heading text-2xl md:text-[40px] font-bold leading-tight'>
                 Features available to our bookeeping customers
               </h3>
-              <p className='text-xl text-body mt-[10px]'>
+              <p className='text-lg md:text-xl text-body mt-[10px]'>
                 Finance for businesses, powered by real humans. We work round
                 the clock to assist you with anything you need.
               </p>
             </div>
             <Group key='check grid'>
               <Group key='first'>
-                <div className='border-t border-[#f2f2f2] pt-20 flex items-start justify-between w-full'>
+                <div className='border-t border-[#f2f2f2] pt-10 md:pt-20 flex max-md:flex-col gap-y-6 items-start justify-between w-full'>
                   <div className='max-w-[364px] w-full flex flex-col'>
                     <span className='py-2 px-6 text-body border border-body rounded-full w-fit'>
                       Bookkeeping
                     </span>
-                    <h3 className='mt-4 text-heading font-bold text-[32px]'>
+                    <h3 className='mt-4 text-heading font-bold text-2xl md:text-[32px]'>
                       Monthly bookkeeping with unlimited access to expert help
                     </h3>
-                    <p className='mt-2 text-body'>
+                    <p className='mt-2 text-body max-md:text-lg'>
                       Let’s tie some sort of text here to give a general
                       overview of this featue.
                     </p>
                   </div>
-                  <div className='flex flex-col max-w-[530px] w-full gap-y-5'>
+                  <div className='flex flex-col max-w-[530px] w-full gap-y-5 max-md:mt-10'>
                     <Check
                       title='Consistent Check-ins with Real Humans'
                       details='Enjoy frequent communication and fast, professional support from your own dedicated accountant and our team of experts. We respond in 24 hours or less.'
@@ -310,16 +311,16 @@ export default function Bookkeeping() {
                 </div>
               </Group>
               <Group key='second'>
-                <div className='border-t border-[#f2f2f2] pt-20 mt-20 flex items-start justify-between w-full'>
+                <div className='border-t border-[#f2f2f2] pt-16 md:pt-20 flex max-md:flex-col gap-y-6 items-start justify-between w-full'>
                   <div className='max-w-[364px] w-full flex flex-col'>
                     <span className='py-2 px-6 text-body border border-body rounded-full w-fit'>
                       Tax Filing & Advisory
                     </span>
-                    <h3 className='mt-4 text-heading font-bold text-[32px]'>
+                    <h3 className='mt-4 text-heading font-bold text-2xl md:text-[32px]'>
                       Eliminate the hassle of tax filing with our streamlined
                       solution{' '}
                     </h3>
-                    <p className='mt-2 text-body'>
+                    <p className='mt-2 text-body max-md:text-lg'>
                       Let’s tie some sort of text here to give a general
                       overview of this featue.
                     </p>
@@ -341,15 +342,15 @@ export default function Bookkeeping() {
                 </div>
               </Group>
               <Group key='third'>
-                <div className='border-t border-[#f2f2f2] pt-20 mt-20 flex items-start justify-between w-full'>
+                <div className='border-t border-[#f2f2f2] pt-16 md:pt-20 flex max-md:flex-col gap-y-6 items-start justify-between w-full'>
                   <div className='max-w-[364px] w-full flex flex-col'>
                     <span className='py-2 px-6 text-body border border-body rounded-full w-fit'>
                       Financial Reporting
                     </span>
-                    <h3 className='mt-4 text-heading font-bold text-[32px]'>
+                    <h3 className='mt-4 text-heading font-bold text-2xl md:text-[32px]'>
                       Get immediate access to crucial business insights
                     </h3>
-                    <p className='mt-2 text-body'>
+                    <p className='mt-2 text-body max-md:text-lg'>
                       Let’s tie some sort of text here to give a general
                       overview of this featue.
                     </p>
@@ -390,13 +391,13 @@ export const Step = ({
   title: string;
   details: string;
 }) => (
-  <div className=' flex gap-x-20 w-full'>
+  <div className=' flex gap-x-5 md:gap-x-20 w-full'>
     <div className='flex flex-col gap-y-3 items-center '>
       <span className='text-midnight text-xl'>{id}</span>
-      <div className='w-[1px] bg-midnight h-full'></div>
+      <div className='w-[1px] bg-midnight h-full '></div>
     </div>
 
-    <div className='flex flex-col gap-y-5 w-full pb-3'>
+    <div className='flex flex-col md:gap-y-5 w-full pb-3'>
       <h4 className='text-heading text-xl font-bold'>{title}</h4>
       <p className='text-body text-sm'>{details}</p>
     </div>
