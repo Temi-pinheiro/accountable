@@ -1,7 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @next/next/no-img-element */
 import { Metadata } from 'next';
+import { Figtree } from 'next/font/google';
+
 import { Group, SectionHeading, SupportCard, Testimonials } from '~/components';
+const figtree = Figtree({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Accountable PISP | Accountable',
@@ -9,15 +12,20 @@ export const metadata: Metadata = {
 };
 export default function AccPISP() {
   return (
-    <div className='flex min-h-screen flex-col pt-24'>
+    <div
+      className={[
+        figtree.className,
+        'flex min-h-screen flex-col pt-10 md:pt-24',
+      ].join(' ')}
+    >
       <Group key='home-hero'>
-        <div className='pt-24 pb-[120px] max-w-[1230px] mx-auto'>
-          <div className='grid grid-cols-2 w-full items-center'>
-            <div className='flex flex-col'>
+        <div className='pt-16 md:pt-24 pb-20 md:pb-[120px] max-w-[1230px] mx-auto max-md:px-6'>
+          <div className=' grid max-md:flex flex-col grid-cols-2 w-full items-center'>
+            <div className='flex flex-col max-md:items-center max-md:text-center'>
               <p className='text-midnight'>
                 Process Improvement or Succession Planning?
               </p>
-              <h1 className='text-heading text-5xl mt-2 max-w-[607px] font-bold'>
+              <h1 className='text-heading text-3xl md:text-5xl leading-none md:leading-snug mt-2 max-w-[607px] font-bold'>
                 Drive Success Through Efficient Processes
               </h1>
               <p className='mt-4 max-w-[460px] text-body'>
@@ -41,7 +49,7 @@ export default function AccPISP() {
                 </a>
               </div>
             </div>
-            <div id='w-node-c5948e4b-7bb8-3bce-154b-b822a3b67dbd-3e938eec'>
+            <div>
               <img
                 src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/641d97ade7fcfb6de8a0a32b_img_pisp.png'
                 loading='lazy'
@@ -55,23 +63,23 @@ export default function AccPISP() {
         </div>
       </Group>
       <Group key='how it works'>
-        <div className='mt-[120px] bg-[#f7f9fb]'>
-          <div className='pt-[120px] pb-[160px] max-w-[1230px] mx-auto'>
+        <div className='md:mt-[120px] bg-[#f7f9fb]'>
+          <div className='pt-[120px] pb-32 md:pb-[160px] max-w-[1230px] mx-auto'>
             <div className='flex flex-col items-center'>
-              <div className='flex flex-col items-center'>
+              <div className='flex flex-col items-center max-md:px-6'>
                 <h4 className='text-sm text-midnight border border-midnight py-1 px-[10px] rounded-full w-fit'>
                   HOW IT WORKS
                 </h4>
-                <h1 className='text-[40px] max-w-[620px] font-bold text-center leading-tight mt-4'>
+                <h1 className='text-2xl md:text-[40px] max-w-[620px] font-bold text-center leading-tight mt-4'>
                   How Accountable PISP works{' '}
                 </h1>
-                <p className='text-xl text-[#575e66] max-w-[620px] text-center mt-[10px]'>
+                <p className='text-lg md:text-xl text-[#575e66] max-w-[620px] text-center mt-[10px]'>
                   Finance for businesses, powered by real humans. We work round
                   the clock to assist you with anything you need.
                 </p>
               </div>
               <Group key='grided'>
-                <div className='grid grid-cols-2 gap-x-6 gap-y-8 max-w-[924px] mt-20'>
+                <div className='grid max-md:px-6 md:grid-cols-2 gap-x-6 gap-y-8 max-w-[924px] mt-20'>
                   <GridCard
                     id='01'
                     title='Analysis'
@@ -119,8 +127,8 @@ export default function AccPISP() {
               heading="Here's what we will do for you"
               paragraph='Finance for businesses, powered by real humans. We work round the clock to assist you with anything you need.'
             />
-            <div className='flex items-center justify-between max-w-[965px] w-full mt-20'>
-              <div className='shrink-0'>
+            <div className='flex max-md:flex-col max-md:px-6 items-center justify-between max-w-[965px] w-full mt-10 md:mt-20'>
+              <div className='md:shrink-0'>
                 <img
                   src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/64108888356436a55c7c8e10_pisp-service_img.png'
                   loading='lazy'
@@ -130,10 +138,10 @@ export default function AccPISP() {
                   srcSet='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/64108888356436a55c7c8e10_pisp-service_img-p-500.png 500w, https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/64108888356436a55c7c8e10_pisp-service_img-p-800.png 800w, https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/64108888356436a55c7c8e10_pisp-service_img.png 1050w'
                 />
               </div>
-              <div className='max-w-[360px] flex flex-col gap-y-10'>
+              <div className='max-w-[360px] flex flex-col gap-y-10 max-md:mt-10'>
                 <div className='flex flex-col gap-y-2'>
                   <h1 className='text-heading'>Process Mapping</h1>
-                  <p className='text-sm text-body'>
+                  <p className='md:text-sm text-body'>
                     Identify inefficiencies and bottlenecks in your current
                     processes with detailed process maps that illustrate each
                     step of your workflows
@@ -174,9 +182,9 @@ export default function AccPISP() {
               heading='Some benefits of this service includes'
               paragraph='Finance for businesses, powered by real humans. We work round the clock to assist you with anything you need.'
             />
-            <div className='flex flex-col items-center justify-between max-w-[976px] w-full mt-[82px]'>
+            <div className='flex flex-col items-center justify-between max-w-[976px] w-full mt-10 md:mt-[82px] max-md:px-6'>
               <Group key='benefits grid'>
-                <div className='flex items-center justify-between w-full'>
+                <div className='flex max-md:flex-col gap-y-10 items-center justify-between w-full'>
                   <div className='max-w-[220px] flex flex-col items-center gap-y-6 text-center'>
                     <img
                       src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/641046491dac1e6b91b6f25f_efficiency%201.png'
@@ -245,10 +253,10 @@ export default function AccPISP() {
         </div>
       </Group>
       <Group key='smiley'>
-        <div className='py-[120px]'>
-          <div className=' max-w-[1230px] mx-auto flex justify-between items-center'>
+        <div className='py-16 max-md:px-6 md:py-[120px]'>
+          <div className=' max-w-[1230px] mx-auto flex max-md:flex-col-reverse justify-between items-center'>
             <Group key='extra notes'>
-              <div className='max-w-[560px] w-full'>
+              <div className='max-w-[560px] w-full max-md:mt-10'>
                 <h1 className='font-bold text-2xl leading-tight text-heading'>
                   How we explain process improvement to a five year old+
                 </h1>
@@ -295,14 +303,14 @@ export default function AccPISP() {
       <Group key='succession'>
         <div
           style={{ backgroundImage: 'url(/faqsbg.png)' }}
-          className='mt-10 py-24 bg-cover bg-center text-white'
+          className='mt-10 py-16 md:py-24 bg-cover bg-center text-white max-md:px-6'
         >
           <div className='max-w-[910px] mx-auto flex flex-col items-center'>
             <div className='flex flex-col items-center'>
-              <h1 className='text-[40px] max-w-[620px] font-bold text-center leading-tight mt-4'>
+              <h1 className='text-2xl md:text-[40px] max-w-[620px] font-bold text-center leading-tight mt-4'>
                 Planning exit/succession?
               </h1>
-              <p className='text-xl max-w-[640px] text-[#b5b5b5] text-center mt-[10px]'>
+              <p className='md:text-xl max-w-[640px] text-[#b5b5b5] text-center mt-[10px]'>
                 Here, we want to talk about our current open roles if we have
                 any, or also use this box to talk about why any talent should
                 join our team.

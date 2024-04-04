@@ -10,7 +10,7 @@ export const SectionHeading = ({
   paragraph: string;
 }) => {
   return (
-    <div className='flex flex-col items-center'>
+    <div className='flex flex-col items-center max-md:px-6'>
       <div className='flex flex-col items-center'>
         <h4 className='text-sm text-midnight border border-midnight py-1 px-[10px] rounded-full w-fit'>
           {title}

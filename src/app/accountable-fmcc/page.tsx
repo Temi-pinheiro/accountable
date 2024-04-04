@@ -18,17 +18,18 @@ const figtree = Figtree({ subsets: ['latin'] });
 export default function AccFMCC() {
   return (
     <div
-      className={[figtree.className, 'flex min-h-screen flex-col pt-24'].join(
-        ' '
-      )}
+      className={[
+        figtree.className,
+        'flex min-h-screen flex-col pt-10 md:pt-24',
+      ].join(' ')}
     >
       <Group key='home-hero'>
         <div className='bg-[#f7f8fa] w-full'>
-          <div className='pt-24 pb-[120px] max-w-[1230px] mx-auto'>
-            <div className='grid grid-cols-2 w-full items-center'>
-              <div className='flex flex-col'>
+          <div className='pt-16 md:pt-24 pb-20 md:pb-[120px] max-w-[1230px] mx-auto max-md:px-6'>
+            <div className=' grid max-md:flex flex-col grid-cols-2 w-full items-center'>
+              <div className='flex flex-col max-md:items-center max-md:text-center'>
                 <p className='text-midnight'>Accountable FMCC</p>
-                <h1 className='text-heading text-5xl leading-snug mt-2 max-w-[607px] font-bold'>
+                <h1 className='text-heading text-3xl md:text-5xl leading-none md:leading-snug mt-2 max-w-[607px] font-bold'>
                   To make creative careers work, we need to talk about money.
                   time.
                 </h1>
@@ -55,7 +56,7 @@ export default function AccFMCC() {
                   </a>
                 </div>
               </div>
-              <div>
+              <div className='max-md:mt-24'>
                 <img
                   src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642e6294e42d3191d259a973_fmcc_img.png'
                   loading='lazy'
@@ -79,9 +80,9 @@ export default function AccFMCC() {
             />
             <Group key='check grid'>
               <Group key='first'>
-                <div className='border-t border-[#f2f2f2] pt-20 flex items-start justify-between w-full mt-20'>
+                <div className='border-t border-[#f2f2f2] pt-20 flex items-start justify-between w-full mt-20 max-md:px-6'>
                   <div className='flex flex-col max-w-[524px] w-full gap-y-5'>
-                    <h3 className='text-heading font-bold text-2xl pb-10'>
+                    <h3 className='text-heading font-bold text-2xl pb-10 max-md:text-center'>
                       Get the best out of your deals
                     </h3>
                     <Check
@@ -97,7 +98,7 @@ export default function AccFMCC() {
                       details='Our program will provide ongoing support throughout the negotiation process, ensuring that you have the resources and guidance you need to make informed financial decisions for your creative business.'
                     />
                   </div>
-                  <div className='max-w-[460px] w-full flex flex-col'>
+                  <div className='max-w-[460px] w-full flex flex-col max-md:hidden'>
                     <img
                       src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642e7f24323b3361b2ef35b2_joeboy.png'
                       loading='lazy'
@@ -110,8 +111,8 @@ export default function AccFMCC() {
                 </div>
               </Group>
               <Group key='second'>
-                <div className='border-t border-[#f2f2f2] pt-20 mt-20 flex items-center justify-between w-full'>
-                  <div className='max-w-[460px] w-full flex flex-col'>
+                <div className='border-t border-[#f2f2f2] pt-20 mt-20 flex items-center justify-between w-full max-md:px-6'>
+                  <div className='max-w-[460px] w-full flex flex-col max-md:hidden'>
                     <img
                       src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642e7f245b124550f6c94ccf_fave.png'
                       loading='lazy'
@@ -122,7 +123,7 @@ export default function AccFMCC() {
                     />
                   </div>
                   <div className='flex flex-col max-w-[524px] w-full gap-y-5'>
-                    <h3 className='text-heading font-bold text-2xl pb-10'>
+                    <h3 className='text-heading font-bold text-2xl pb-10 max-md:text-center'>
                       Get the compensation you deserve
                     </h3>
                     <Check
@@ -141,9 +142,9 @@ export default function AccFMCC() {
                 </div>
               </Group>
               <Group key='third'>
-                <div className='border-t border-[#f2f2f2] pt-20 mt-20 flex justify-between items-center w-full'>
+                <div className='border-t border-[#f2f2f2] pt-20 mt-20 flex justify-between items-center w-full max-md:px-6'>
                   <div className='flex flex-col max-w-[524px] w-full gap-y-5'>
-                    <h3 className='text-heading font-bold text-2xl pb-10'>
+                    <h3 className='text-heading font-bold text-2xl pb-10 max-md:text-center'>
                       Taxes & Investments
                     </h3>
                     <Check
@@ -159,7 +160,7 @@ export default function AccFMCC() {
                       details="Creatives often have unique cash flow and retirement planning needs. Our program will help you manage cash flow effectively, ensuring that you have the funds you need to pursue your creative goals. We'll provide customised retirement planning advice and services, so you can enjoy a secure and comfortable retirement."
                     />
                   </div>
-                  <div className='max-w-[460px] w-full flex flex-col'>
+                  <div className='max-w-[460px] w-full flex flex-col max-md:hidden'>
                     <img
                       src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642e7f24091a221af4eb9829_random.png'
                       loading='lazy'
