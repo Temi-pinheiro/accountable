@@ -18,9 +18,9 @@ export const Check = ({
       />{' '}
     </div>
 
-    <div className='flex flex-col gap-y-5 w-full pb-3'>
+    <div className='flex flex-col md:gap-y-5 w-full pb-3'>
       <h4 className='text-heading text-xl font-bold'>{title}</h4>
-      <p className='text-body text-sm'>{details}</p>
+      <p className='text-body md:text-sm'>{details}</p>
     </div>
   </div>
 );

@@ -18,17 +18,18 @@ const figtree = Figtree({ subsets: ['latin'] });
 export default function Tax() {
   return (
     <div
-      className={[figtree.className, 'flex min-h-screen flex-col pt-24'].join(
-        ' '
-      )}
+      className={[
+        figtree.className,
+        'flex min-h-screen flex-col pt-10 md:pt-24',
+      ].join(' ')}
     >
       <Group key='home-hero'>
         <div className='bg-[#fffcfa] w-full'>
-          <div className='pt-24 pb-[120px] max-w-[1230px] mx-auto'>
-            <div className='grid grid-cols-2 w-full items-center'>
-              <div className='flex flex-col'>
+          <div className='pt-16 md:pt-24 pb-20 md:pb-[120px] max-w-[1230px] mx-auto max-md:px-6'>
+            <div className=' grid max-md:flex flex-col grid-cols-2 w-full items-center'>
+              <div className='flex flex-col max-md:items-center max-md:text-center'>
                 <p className='text-midnight'>Tax Filling and Advisory</p>
-                <h1 className='text-heading text-5xl leading-snug mt-2 max-w-[607px] font-bold'>
+                <h1 className='text-heading text-3xl md:text-5xl leading-none md:leading-snug mt-2 max-w-[607px] font-bold'>
                   Get year-round tax advisory, support and your filings done on
                   time.
                 </h1>
@@ -67,8 +68,8 @@ export default function Tax() {
         </div>
       </Group>
       <Group key='benefits'>
-        <div className='mt-[120px] bg-[#fcfeff]'>
-          <div className=' pb-[80px] max-w-[1230px] mx-auto flex flex-col items-center'>
+        <div className='mt-[120px] bg-[#fcfeff] max-md:px-6'>
+          <div className='pb-14 md:pb-[80px] max-w-[1230px] mx-auto flex flex-col items-center'>
             <SectionHeading
               title='BENEFITS'
               heading='Benefits of using Accountable for your Tax Filing & Advisory'
@@ -76,7 +77,7 @@ export default function Tax() {
             />
             <div className='flex flex-col items-center justify-between max-w-[1204px] w-full mt-[82px]'>
               <Group key='benefits grid'>
-                <div className='flex items-center justify-between w-full gap-x-8'>
+                <div className='flex max-md:flex-col max-md:gap-y-10 items-center justify-between w-full gap-x-8'>
                   <div className='max-w-[380px] flex flex-col items-center gap-y-3 text-center'>
                     <img
                       src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642510bdb6ff9a11f9016272_accounting%202.png'
@@ -153,22 +154,22 @@ export default function Tax() {
         </div>
       </Group>
       <Group key='features'>
-        <div className='mt-20 mb-[120px]'>
+        <div className='mt-14 md:mt-20 md:mb-[120px] max-md:px-6'>
           <div className='flex flex-col items-center max-w-[1064px] w-full mx-auto'>
             <div className='flex flex-col text-center max-w-[620px] pb-20 '>
-              <h3 className='text-heading text-[40px] font-bold leading-tight'>
+              <h3 className='text-heading text-3xl md:text-[40px] font-bold leading-tight'>
                 Features available to our tax filling & advisory service{' '}
               </h3>
-              <p className='text-xl text-body mt-[10px]'>
+              <p className='text-lg md:text-xl text-body mt-[10px]'>
                 Finance for businesses, powered by real humans. We work round
                 the clock to assist you with anything you need.
               </p>
             </div>
             <Group key='check grid'>
               <Group key='first'>
-                <div className='border-t border-[#f2f2f2] pt-20 flex items-start justify-between w-full'>
-                  <div className='max-w-[364px] w-full flex flex-col'>
-                    <h3 className='mt-4 text-heading font-bold text-[32px]'>
+                <div className='border-t border-[#f2f2f2] md:pt-20 flex max-md:flex-col max-md:items-center items-start md:justify-between w-full'>
+                  <div className='max-w-[364px] w-full flex flex-col max-md:items-center max-md:text-center'>
+                    <h3 className='mt-4 text-heading font-bold text-2xl md:text-[32px]'>
                       Tax support that is uniquely designed for your business
                     </h3>
                     <p className='mt-2 text-body'>
@@ -177,7 +178,7 @@ export default function Tax() {
                       start to finish.
                     </p>
                   </div>
-                  <div className='flex flex-col max-w-[530px] w-full gap-y-5'>
+                  <div className='flex flex-col max-w-[530px] w-full gap-y-5 max-md:mt-10'>
                     <Check
                       title='Your bookkeeping taken care of'
                       details="With our monthly bookkeeping service, we'll organise your business transactions and provide you with a complete year-in-review snapshot of your finances at year-end tax time."
@@ -194,9 +195,9 @@ export default function Tax() {
                 </div>
               </Group>
               <Group key='second'>
-                <div className='border-t border-[#f2f2f2] pt-20 mt-20 flex items-start justify-between w-full'>
-                  <div className='max-w-[364px] w-full flex flex-col'>
-                    <h3 className='mt-4 text-heading font-bold text-[32px]'>
+                <div className='border-t border-[#f2f2f2] md:pt-20 pt-10 mt-10 md:mt-20 flex max-md:flex-col items-start justify-between w-full'>
+                  <div className='max-w-[364px] w-full flex flex-col max-md:items-center max-md:text-center'>
+                    <h3 className='mt-4 text-heading font-bold text-2xl md:text-[32px]'>
                       Maximum tax-efficiency in the short and long-term.
                     </h3>
                     <p className='mt-2 text-body'>
@@ -205,7 +206,7 @@ export default function Tax() {
                       tax spectrum.
                     </p>
                   </div>
-                  <div className='flex flex-col max-w-[530px] w-full gap-y-5'>
+                  <div className='flex flex-col max-w-[530px] w-full gap-y-5 max-md:mt-10'>
                     <Check
                       title='Tax planning & advisory'
                       details="Whether you're a creative, small firm, partnership, or private limited company, our experienced team can help you develop effective tax strategies to maximise your income. We will help you navigate the complex world of tax laws and regulations, and identify tax-saving opportunities that you may have overlooked."
@@ -222,9 +223,9 @@ export default function Tax() {
                 </div>
               </Group>
               <Group key='third'>
-                <div className='border-t border-[#f2f2f2] pt-20 mt-20 flex items-start justify-between w-full'>
-                  <div className='max-w-[364px] w-full flex flex-col'>
-                    <h3 className='mt-4 text-heading font-bold text-[32px]'>
+                <div className='border-t border-[#f2f2f2] md:pt-20 pt-10 mt-10 md:mt-20 max-md:mb-10 flex max-md:flex-col items-start justify-between w-full'>
+                  <div className='max-w-[364px] w-full flex flex-col max-md:items-center max-md:text-center'>
+                    <h3 className='mt-4 text-heading font-bold text-2xl md:text-[32px]'>
                       Year-End Financial Package
                     </h3>
                     <p className='mt-2 text-body'>
@@ -232,7 +233,7 @@ export default function Tax() {
                       financial package for each year of catch up.
                     </p>
                   </div>
-                  <div className='flex flex-col max-w-[530px] w-full gap-y-5'>
+                  <div className='flex flex-col max-w-[530px] w-full gap-y-5 max-md:mt-10'>
                     <Check
                       title='All your reports in one place'
                       details='Say goodbye to scattered financial documents - our Year End Financial Package includes your IFRS compliant income statement, balance sheet, statement of cash flows, and notes to the accounts, all in one place.'
