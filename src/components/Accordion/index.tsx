@@ -21,7 +21,7 @@ export const Accordion = ({
           className='hover:cursor-pointer flex gap-x-3 justify-between items-center '
           onClick={() => setIsOpen(!isOpen)}
         >
-          <h1 className='text-xl font-medium'>{title}</h1>
+          <h1 className='md:text-xl font-medium'>{title}</h1>
           <motion.svg
             width='20'
             height='20'
@@ -52,7 +52,7 @@ export const Accordion = ({
             transition={{ duration: 0.3, ease: 'easeInOut' }}
             // className='flex flex-col mt-6'
           >
-            <div className=' pt-5'>{children}</div>
+            <div className=' pt-5 max-md:text-sm'>{children}</div>
           </motion.section>
         )}
       </AnimatePresence>

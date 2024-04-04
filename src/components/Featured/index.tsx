@@ -3,10 +3,10 @@ import React from 'react';
 
 export const FeaturedIn = () => {
   return (
-    <div className='mt-[80px]'>
+    <div className='mt-14 md:mt-[80px]'>
       <div className='flex flex-col mx-auto items-center max-w-[690px]'>
         <h1 className='text-heading font-bold text-[38px]'>As featured in</h1>
-        <div className='flex items-center justify-between mt-[72px] gap-x-14'>
+        <div className='flex items-center justify-between mt-8 md:mt-[72px] gap-x-14 max-md:px-6'>
           <a
             href='https://businessday.ng/brands-advertising/article/firm-opens-operation-to-provide-financial-solutions-for-businesses/'
             target='_blank'

@@ -27,32 +27,34 @@ export const FaqsSection = () => {
   return (
     <div
       style={{ backgroundImage: 'url(/faqsbg.png)' }}
-      className='mt-10 py-24 bg-cover bg-center text-white'
+      className=' py-12 md:py-24 bg-cover bg-center text-white'
     >
-      <div className='max-w-[910px] mx-auto flex flex-col items-center'>
+      <div className='max-w-[910px] mx-auto flex flex-col items-center max-md:px-6'>
         <div className='flex flex-col items-center'>
           <h4 className='text-xs border border-white py-1 px-[10px] rounded-full w-fit'>
             FAQS
           </h4>
-          <h1 className='text-[40px] max-w-[620px] font-bold text-center leading-tight mt-4'>
+          <h1 className='text-2xl md:text-[40px] max-w-[620px] font-bold text-center leading-tight mt-4'>
             Some recurring questions we get asked a lot...
           </h1>
-          <p className='text-xl max-w-[620px] text-center mt-[10px]'>
+          <p className='text-sm md:text-xl max-w-[620px] text-center mt-[10px]'>
             We have taken out the time to help answer some of the most
             frequently asked questions we get.
           </p>
         </div>
-        <div className='flex flex-col mt-[80px] gap-y-6 max-w-[640px] w-full'>
+        <div className='flex flex-col mt-10 md:mt-[80px] gap-y-6 max-w-[640px] w-full'>
           {faqs.map((faq) => (
             <Accordion title={faq.question} key={faq.question}>
               <p className='text-[#ccc]'>{faq.answer}</p>
             </Accordion>
           ))}
         </div>
-        <div className='mt-[120px] flex items-center justify-between w-full'>
-          <h2 className='text-[40px] font-bold'>Ready to get started?</h2>
+        <div className='mt-16 md:mt-[120px] flex max-md:flex-col items-center justify-between w-full'>
+          <h2 className='text-2xl md:text-[40px] font-bold max-md:text-center'>
+            Ready to get started?
+          </h2>
           <a
-            className='bg-white text-midnight py-4 px-10 rounded-xl text-lg'
+            className='bg-white text-midnight py-4 max-md:mt-4 px-8 md:px-10 rounded-xl md:text-lg'
             href=''
             target='_blank'
           >

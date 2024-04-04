@@ -80,12 +80,12 @@ export default function Home() {
   return (
     <main className='flex min-h-screen flex-col  pt-24'>
       <Group key='home-hero'>
-        <div className='pt-24 flex flex-col items-center'>
-          <div className='flex flex-col items-center text-center'>
-            <h1 className='text-[#1d1e20] font-black text-7xl max-w-[720px]'>
+        <div className='pt-10 px-6 md:px-0 md:pt-24 flex flex-col md:items-center'>
+          <div className='flex flex-col md:items-center md:text-center'>
+            <h1 className='text-[#1d1e20] font-bold md:font-black text-3xl md:text-7xl max-w-[720px]'>
               Optimize your financial processes
             </h1>
-            <p className='text-[#575e66] font-bold max-w-[680px] mt-4 text-xl'>
+            <p className='text-[#575e66] font-medium md:font-bold max-w-[680px] mt-4 text-sm md:text-xl'>
               We're here to help you every step of the way - from optimising
               your financial processes to managing bookkeeping and taxes
             </p>
@@ -93,7 +93,7 @@ export default function Home() {
               <a
                 href='https://calendar.app.google/Z9JQd7RHr52r4uoC9'
                 target='_blank'
-                className='bg-[#001b84] py-3 px-4 rounded-xl text-white'
+                className='bg-[#001b84] py-3 px-4 rounded-xl text-white max-md:w-fit'
               >
                 Book a meeting now
               </a>
@@ -104,26 +104,25 @@ export default function Home() {
             src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/64077b54ef0fa04740839061_hero_img.png'
             loading='lazy'
             sizes='(max-width: 479px) 100vw, 990px'
-            width='990'
+            // width='990'
             alt='Hero Image'
-            className='mt-10'
+            className='mt-10 md:w-[990px]'
           />
         </div>
       </Group>
       <Group key='home-brands'>
-        <div className='wrapper mx-auto pt-14 pb-[88px]'>
+        <div className='wrapper mx-auto pt-6 md:pt-14 pb-10 md:pb-[88px]'>
           <div className='flex flex-col max-w-[1020px]'>
             <div className='flex items-center justify-between gap-x-14'>
-              <span className='h-[1px] border border-[#001b84] max-w-[380px] block w-full'></span>
+              <span className='h-[1px] max-md:hidden  border border-[#001b84] max-w-[380px] block w-full'></span>
               <div className='shrink-0'>
                 Helping proactive brands secure their future
               </div>
-              <span className='h-[1px] border border-[#001b84] max-w-[380px] block w-full'></span>
+              <span className='h-[1px] max-md:hidden border border-[#001b84] max-w-[380px] block w-full'></span>
             </div>
             <Group key='images'>
-              <div className='flex items-center gap-x-8 mt-16'>
+              <div className='flex items-center gap-x-4 md:gap-x-8 mt-10 md:mt-16 max-md:grid grid-cols-2 gap-y-6 max-md:px-6'>
                 <a
-                  id='w-node-_1a320622-88c5-7a58-ab65-3c736092803d-4c7c6952'
                   href='https://www.nguvuhealth.com/'
                   target='_blank'
                   className='w-inline-block'
@@ -132,12 +131,10 @@ export default function Home() {
                     src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642db5545dcdd0ef983b3de7_nguvu.png'
                     loading='lazy'
                     width='151'
-                    id='w-node-_43c4caee-62a8-d7b1-15a3-f151d39d1c97-4c7c6952'
                     alt="Brands we've worked for"
                   />
                 </a>
                 <a
-                  id='w-node-de16174b-05f6-9806-7010-a854d543aba2-4c7c6952'
                   href='https://www.synlab.com.ng/'
                   target='_blank'
                   className='w-inline-block'
@@ -146,11 +143,10 @@ export default function Home() {
                     src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642db5551db0d9922caac882_synlab.png'
                     loading='lazy'
                     width='142'
-                    id='w-node-_77530c64-cf87-e99d-4a64-14d6092904ef-4c7c6952'
                     alt="Brands we've worked for"
                   />
                 </a>
-                <div id='w-node-_6f206e6b-0a8f-740e-6525-7fd520a560f6-4c7c6952'>
+                <div>
                   <a
                     href='https://bogobiri.com/'
                     target='_blank'
@@ -165,7 +161,6 @@ export default function Home() {
                   </a>
                 </div>
                 <a
-                  id='w-node-b1529afd-5873-4b29-6d2f-a7a3837561f7-4c7c6952'
                   href='https://afnigeria.org/'
                   target='_blank'
                   className='w-inline-block'
@@ -174,12 +169,10 @@ export default function Home() {
                     src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642db5546368423129825884_alliance.png'
                     loading='lazy'
                     width='80'
-                    id='w-node-_2f23e0b4-113d-dad9-22d6-63fb1e763818-4c7c6952'
                     alt=''
                   />
                 </a>
                 <a
-                  id='w-node-_562ba969-7db5-38a4-10f3-f81c53d32ab1-4c7c6952'
                   href='https://spottr.app/'
                   target='_blank'
                   className='w-inline-block'
@@ -188,12 +181,10 @@ export default function Home() {
                     src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642db555a1d33154734ee2cf_spottr.png'
                     loading='lazy'
                     width='143'
-                    id='w-node-_9ae2146a-07a5-4db0-fbb8-06956b654875-4c7c6952'
                     alt="Brands we've worked for"
                   />
                 </a>
                 <a
-                  id='w-node-_1fa73465-9011-e109-5ddb-def8ed7f500d-4c7c6952'
                   href='https://cometoidesign.com/'
                   target='_blank'
                   className='w-inline-block'
@@ -212,22 +203,22 @@ export default function Home() {
         </div>
       </Group>
       <Group key='services'>
-        <div className='py-20'>
-          <div className='max-w-[1028px] mx-auto'>
-            <div className='flex flex-col items-center'>
+        <div className='py-10 md:py-20'>
+          <div className='max-w-[1028px] mx-auto max-md:px-6'>
+            <div className='flex flex-col md:items-center'>
               <h4 className='text-sm text-midnight border border-midnight py-1 px-[10px] rounded-full w-fit'>
                 OUR SERVICES
               </h4>
-              <h1 className='text-[40px] max-w-[620px] font-black text-center leading-tight mt-4'>
+              <h1 className='text-2xl md:text-[40px] max-w-[620px] font-semibold md:font-black md:text-center leading-tight mt-4'>
                 We can help you and your team achieve much more
               </h1>
-              <p className='text-xl text-[#575e66] max-w-[620px] text-center mt-[10px]'>
+              <p className='text-sm md:text-xl text-[#575e66] max-w-[620px] md:text-center mt-[10px]'>
                 With our customised solutions, you can trust that your finances
                 are in good hands, so you can focus on running your business and
                 improving your bottom line.
               </p>
             </div>
-            <div className='grid grid-cols-3 gap-x-10 gap-y-8 mt-[88px]'>
+            <div className='grid grid-cols-2 md:grid-cols-3 gap-x-10 gap-y-8 mt-[88px]'>
               {services.map((service) => (
                 <ServiceCard key={service.title} {...service} />
               ))}
@@ -236,21 +227,21 @@ export default function Home() {
         </div>
       </Group>
       <Group key='processes'>
-        <div className='mt-30 py-24 bg-[#f8fafe]'>
-          <div className='max-w-[1200px] mx-auto'>
-            <div className='flex flex-col items-center'>
+        <div className='mt-20 md:mt-30 py-16 md:py-24 bg-[#f8fafe]'>
+          <div className='max-w-[1200px] mx-auto max-md:px-6'>
+            <div className='flex flex-col md:items-center'>
               <h4 className='text-sm text-midnight border border-midnight py-1 px-[10px] rounded-full w-fit'>
                 OUR PROCESS
               </h4>
-              <h1 className='text-[40px] max-w-[620px] font-black text-center leading-tight mt-4'>
+              <h1 className='text-2xl md:text-[40px] max-w-[620px] font-semibold md:font-black md:text-center leading-tight mt-4'>
                 Here's how we love to work
               </h1>
-              <p className='text-xl text-[#575e66] max-w-[620px] text-center mt-[10px]'>
+              <p className='text-sm md:text-xl text-[#575e66] max-w-[620px] md:text-center mt-[10px]'>
                 Over the years, we have perfected our work process that allows
                 us help businesses reach their full potential
               </p>
             </div>
-            <div className='mt-[120px] gap-x-10 flex items-center'>
+            <div className='mt-20 md:mt-[120px] gap-x-10 flex max-md:flex-col items-center'>
               <div className='div-block-46 shrink-0'>
                 <img
                   src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/6408a5c97fd405dd86deb79e_processNew_image.png'
@@ -259,7 +250,7 @@ export default function Home() {
                   width='640'
                   alt=''
                   srcSet='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/6408a5c97fd405dd86deb79e_processNew_image-p-500.png 500w, https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/6408a5c97fd405dd86deb79e_processNew_image-p-800.png 800w, https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/6408a5c97fd405dd86deb79e_processNew_image-p-1080.png 1080w, https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/6408a5c97fd405dd86deb79e_processNew_image.png 1278w'
-                  className='image-16'
+                  className='w-auto md:w-[640px]'
                 />
               </div>
               <div className='flex flex-col gap-y-10'>
@@ -316,33 +307,44 @@ export default function Home() {
       </Group>
       <Group key='number'>
         <div className='mt-[96px] mb-[120px]'>
-          <div className='bg-[#fafafa] max-w-[1260px] border border-[#eaeaea] rounded-lg mx-auto py-4 px-[82px] flex items-center justify-between'>
+          <div className='bg-[#fafafa] max-w-[1260px] border border-[#eaeaea] rounded-lg mx-auto py-4 px-14 gap-y-8 md:px-[82px] flex max-md:grid grid-cols-1 items-center md:justify-between'>
             <div className='flex flex-col'>
-              <h1 className='text-[52px] font-bold text-heading'>65yrs+</h1>
-              <div className='text-sm text-body mt-6'>
+              <h1 className='text-[32px] md:text-[52px] font-bold text-heading'>
+                65yrs+
+              </h1>
+              <div className='text-sm text-body md:mt-6'>
                 COMBINED MGT. EXPERIENCE
               </div>
             </div>
-            <div className='w-[1px] border border-[#eaeaea] bg-[#eaeaea] h-[133px]'></div>
+            <div className='max-md:hidden w-[1px] border border-[#eaeaea] bg-[#eaeaea] h-[133px]'></div>
             <div className='div-block-49'>
-              <h1 className='text-[52px] font-bold text-heading'>60+</h1>
-              <div className='text-sm text-body mt-6'>HAPPY CUSTOMERS</div>
+              <h1 className='text-[32px] md:text-[52px] font-bold text-heading'>
+                60+
+              </h1>
+              <div className='text-sm text-body md:mt-6'>HAPPY CUSTOMERS</div>
             </div>
-            <div className='w-[1px] border border-[] bg-[#eaeaea] h-[133px]'></div>
+            <div className='max-md:hidden w-[1px] border border-[#eaeaea] bg-[#eaeaea] h-[133px]'></div>
             <div className='div-block-50'>
-              <h1 className='text-[52px] font-bold text-heading'>4+</h1>
-              <div className='text-sm text-body mt-6'>COUNTRIES</div>
+              <h1 className='text-[32px] md:text-[52px] font-bold text-heading'>
+                4+
+              </h1>
+              <div className='text-sm text-body md:mt-6'>COUNTRIES</div>
             </div>
-            <div className='w-[1px] border border-[] bg-[#eaeaea] h-[133px]'></div>
+            <div className='max-md:hidden w-[1px] border border-[#eaeaea] bg-[#eaeaea] h-[133px]'></div>
             <div className='div-block-51'>
-              <h1 className='text-[52px] font-bold text-heading'>91.7%</h1>
-              <div className='text-sm text-body mt-6'>CUSTOMER RETENTION</div>
+              <h1 className='text-[32px] md:text-[52px] font-bold text-heading'>
+                91.7%
+              </h1>
+              <div className='text-sm text-body md:mt-6'>
+                CUSTOMER RETENTION
+              </div>
             </div>
           </div>
         </div>
       </Group>
       <Testimonials />
       <FeaturedIn />
+      <div className='mt-10 mb-10'></div>
       <SupportCard />
       <FaqsSection />
     </main>

@@ -4,20 +4,20 @@ import React from 'react';
 export const SupportCard = () => {
   return (
     <div className=' py-24 bg-[#f9f7f4]'>
-      <div className='max-w-[990px] mx-auto'>
+      <div className='max-w-[990px] mx-auto max-md:px-6'>
         <div className='flex flex-col items-center'>
           <h4 className='text-sm text-midnight border border-midnight py-1 px-[10px] rounded-full w-fit'>
             CUSTOMER SUPPORT
           </h4>
-          <h1 className='text-[40px] max-w-[620px] text-[#020d35] font-black text-center leading-tight mt-4'>
+          <h1 className='text-2xl md:text-[40px] max-w-[620px] text-[#020d35] font-black text-center leading-tight mt-4'>
             We are here for you, always
           </h1>
-          <p className='text-xl text-[#575e66] max-w-[620px] text-center mt-[10px]'>
+          <p className='text-sm md:text-xl text-[#575e66] max-w-[620px] text-center mt-[10px]'>
             Finance for businesses, powered by real humans. We work round the
             clock to assist you with anything you need.
           </p>
         </div>
-        <div className='mt-[80px] flex items-center justify-between'>
+        <div className='mt-14 md:mt-[80px] flex items-center justify-between'>
           <div className='flex flex-col gap-y-6 max-w-[376px] w-full'>
             <div className='flex py-5 pr-8 pl-6 gap-x-3 bg-white rounded-xl'>
               <div className='shrink-0'>
@@ -85,7 +85,7 @@ export const SupportCard = () => {
               </div>
             </div>
           </div>
-          <div className='div-block-27 shrink-0'>
+          <div className='div-block-27 shrink-0 max-md:hidden'>
             <img
               src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/6405a984a68c026d05dac5e8_cx_img.png'
               loading='lazy'

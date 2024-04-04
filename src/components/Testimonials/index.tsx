@@ -36,21 +36,21 @@ export const Testimonials = () => {
     },
   ];
   return (
-    <div className=' py-24 bg-[#b7c4f7]'>
-      <div className='max-w-[1040px] mx-auto'>
+    <div className='py-10 md:py-24 bg-[#b7c4f7]'>
+      <div className='max-w-[1040px] mx-auto max-md:px-6'>
         <div className='flex flex-col items-center'>
           <h4 className='text-sm text-midnight border border-midnight py-1 px-[10px] rounded-full w-fit'>
             TESTIMONIALS
           </h4>
-          <h1 className='text-[40px] max-w-[620px] text-[#020d35] font-black text-center leading-tight mt-4'>
+          <h1 className='text-2xl md:text-[40px] max-w-[620px] text-[#020d35] font-medium md:font-black text-center leading-tight mt-4'>
             Trust us to keep all our promises
           </h1>
-          <p className='text-xl text-[#575e66] max-w-[620px] text-center mt-[10px]'>
+          <p className='text-sm md:text-xl text-[#575e66] max-w-[620px] text-center mt-[10px]'>
             Don't just take our word for granted, here's what some of our
             customers have to say about us.
           </p>
         </div>
-        <div className='mt-[80px] grid grid-cols-3 gap-x-10'>
+        <div className='mt-16 md:mt-[80px] grid md:grid-cols-3 gap-y-6 md:gap-x-10 max-md:justify-center'>
           {testimonials.map((testimonial) => (
             <TestimonialCard key={testimonial.testimonial} {...testimonial} />
           ))}
