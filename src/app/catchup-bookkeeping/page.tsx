@@ -18,16 +18,17 @@ export const metadata: Metadata = {
 export default function CatchupBKK() {
   return (
     <div
-      className={[figtree.className, 'flex min-h-screen flex-col pt-24'].join(
-        ' '
-      )}
+      className={[
+        figtree.className,
+        'flex min-h-screen flex-col pt-10 md:pt-24',
+      ].join(' ')}
     >
       <Group key='home-hero'>
-        <div className='pt-24 pb-[120px] max-w-[1230px] mx-auto'>
-          <div className='grid grid-cols-2 w-full items-center'>
-            <div className='flex flex-col'>
+        <div className='pt-16 md:pt-24 pb-20 md:pb-[120px] max-w-[1230px] mx-auto max-md:px-6'>
+          <div className=' grid max-md:flex flex-col grid-cols-2 w-full items-center'>
+            <div className='flex flex-col max-md:items-center max-md:text-center'>
               <p className='text-midnight'>Catch Up Bookkeeping.</p>
-              <h1 className='text-heading text-5xl leading-snug mt-2 max-w-[607px] font-bold'>
+              <h1 className='text-heading text-3xl md:text-5xl leading-none md:leading-snug mt-2 max-w-[607px] font-bold'>
                 Tidy up your financial records with Catch Up Bookkeeping.
               </h1>
               <p className='mt-4 max-w-[460px] text-body'>
@@ -57,7 +58,7 @@ export default function CatchupBKK() {
                 </a>
               </div>
             </div>
-            <div>
+            <div className='max-md:mt-16'>
               <img
                 src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642e8561f8ce14e3d5182150_image_services.png'
                 loading='lazy'
@@ -72,7 +73,7 @@ export default function CatchupBKK() {
       </Group>
 
       <Group key='benefits'>
-        <div className='mt-[120px] bg-[#fcfeff]'>
+        <div className='mt-20 md:mt-[120px] bg-[#fcfeff]'>
           <div className=' pb-[80px] max-w-[1230px] mx-auto flex flex-col items-center'>
             <SectionHeading
               title='BENEFITS'
@@ -81,8 +82,8 @@ export default function CatchupBKK() {
             />
             <div className='flex flex-col items-center justify-between max-w-[856px] w-full mt-[82px]'>
               <Group key='benefits grid'>
-                <div className='flex items-center justify-between w-full'>
-                  <div className='max-w-[248px] flex flex-col items-center gap-y-3 text-center'>
+                <div className='flex max-md:flex-col max-md:gap-y-10 items-center justify-between w-full max-md:px-6'>
+                  <div className='md:max-w-[248px] flex flex-col items-center gap-y-3 text-center'>
                     <img
                       src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/6426f13db2096d417ae95205_fast.png'
                       loading='lazy'
@@ -97,7 +98,7 @@ export default function CatchupBKK() {
                       saving you time and reducing deadline stress.
                     </p>
                   </div>
-                  <div className='max-w-[248px] flex flex-col items-center gap-y-3 text-center'>
+                  <div className='md:max-w-[248px] flex flex-col items-center gap-y-3 text-center'>
                     <img
                       src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642510bd943fc89907d9e658_tax%202.png'
                       loading='lazy'
@@ -112,7 +113,7 @@ export default function CatchupBKK() {
                       catch-up year to simplify the process.
                     </p>
                   </div>
-                  <div className='max-w-[248px] flex flex-col items-center gap-y-3 text-center'>
+                  <div className='md:max-w-[248px] flex flex-col items-center gap-y-3 text-center'>
                     <img
                       src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/6426f13d39d5afb7e9c0e444_stop.png'
                       loading='lazy'
@@ -152,21 +153,21 @@ export default function CatchupBKK() {
       </Group>
       <Group key='features'>
         <div className='mt-20 mb-[120px]'>
-          <div className='flex flex-col items-center max-w-[1064px] w-full mx-auto'>
+          <div className='flex flex-col items-center max-w-[1064px] w-full mx-auto max-md:px-6'>
             <div className='flex flex-col text-center max-w-[620px] pb-20 '>
-              <h3 className='text-heading text-[40px] font-bold leading-tight'>
+              <h3 className='text-heading text-2xl md:text-[40px] font-bold leading-tight'>
                 Features available to our catchup bookkeeping service{' '}
               </h3>
-              <p className='text-xl text-body mt-[10px]'>
+              <p className='text-lg md:text-xl text-body mt-[10px]'>
                 Finance for businesses, powered by real humans. We work round
                 the clock to assist you with anything you need.
               </p>
             </div>
             <Group key='check grid'>
               <Group key='first'>
-                <div className='border-t border-[#f2f2f2] pt-20 flex items-start justify-between w-full'>
+                <div className='border-t border-[#f2f2f2] pt-10 md:pt-20 flex max-md:flex-col gap-y-10 items-start justify-between w-full'>
                   <div className='max-w-[364px] w-full flex flex-col'>
-                    <h3 className='mt-4 text-heading font-bold text-[32px]'>
+                    <h3 className='mt-4 text-heading font-bold text-3xl md:text-[32px]'>
                       Regain control of your books effortlessly and without
                       stress.{' '}
                     </h3>
@@ -193,9 +194,9 @@ export default function CatchupBKK() {
                 </div>
               </Group>
               <Group key='second'>
-                <div className='border-t border-[#f2f2f2] pt-20 mt-20 flex items-start justify-between w-full'>
+                <div className='border-t border-[#f2f2f2] pt-10 md:pt-20 mt-20 flex max-md:flex-col gap-y-10 items-start justify-between w-full'>
                   <div className='max-w-[364px] w-full flex flex-col'>
-                    <h3 className='mt-4 text-heading font-bold text-[32px]'>
+                    <h3 className='mt-4 text-heading font-bold text-3xl md:text-[32px]'>
                       Personalised Experience, just for you
                     </h3>
                     <p className='mt-2 text-body'>
@@ -220,9 +221,9 @@ export default function CatchupBKK() {
                 </div>
               </Group>
               <Group key='third'>
-                <div className='border-t border-[#f2f2f2] pt-20 mt-20 flex items-start justify-between w-full'>
+                <div className='border-t border-[#f2f2f2] pt-10 md:pt-20 mt-20 flex max-md:flex-col gap-y-10 items-start justify-between w-full'>
                   <div className='max-w-[364px] w-full flex flex-col'>
-                    <h3 className='mt-4 text-heading font-bold text-[32px]'>
+                    <h3 className='mt-4 text-heading font-bold text-3xl md:text-[32px]'>
                       Year-End Financial Package
                     </h3>
                     <p className='mt-2 text-body'>
