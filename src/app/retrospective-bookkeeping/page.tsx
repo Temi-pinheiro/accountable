@@ -19,16 +19,17 @@ export const metadata: Metadata = {
 export default function RetroBkk() {
   return (
     <div
-      className={[figtree.className, 'flex min-h-screen flex-col pt-24'].join(
-        ' '
-      )}
+      className={[
+        figtree.className,
+        'flex min-h-screen flex-col pt-10 md:pt-24',
+      ].join(' ')}
     >
       <Group key='home-hero'>
-        <div className='pt-24 pb-[120px] max-w-[1230px] mx-auto'>
-          <div className='grid grid-cols-2 w-full items-center'>
-            <div className='flex flex-col'>
+        <div className='pt-16 md:pt-24 pb-20 md:pb-[120px] max-w-[1230px] mx-auto max-md:px-6'>
+          <div className=' grid max-md:flex flex-col grid-cols-2 w-full items-center'>
+            <div className='flex flex-col max-md:items-center max-md:text-center'>
               <p className='text-midnight'>Retroactive Bookkeeping.</p>
-              <h1 className='text-heading text-5xl leading-snug mt-2 max-w-[607px] font-bold'>
+              <h1 className='text-heading text-3xl md:text-5xl leading-none md:leading-snug mt-2 max-w-[607px] font-bold'>
                 Tidy up your financial records with Catch Up Bookkeeping.
               </h1>
               <p className='mt-4 max-w-[460px] text-body'>
@@ -58,7 +59,7 @@ export default function RetroBkk() {
                 </a>
               </div>
             </div>
-            <div>
+            <div className='mt-20'>
               <img
                 src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642e95f90c8e507e02de582c_retroactive-acc.png'
                 loading='lazy'
@@ -74,7 +75,7 @@ export default function RetroBkk() {
 
       <Group key='benefits'>
         <div className='mt-[120px] bg-[#fcfeff]'>
-          <div className=' pb-[80px] max-w-[1230px] mx-auto flex flex-col items-center'>
+          <div className=' pb-[80px] max-w-[1230px] mx-auto flex flex-col items-center max-md:px-6'>
             <SectionHeading
               title='BENEFITS'
               heading='Benefits of using Accountable for your bookkeeping'
@@ -82,8 +83,8 @@ export default function RetroBkk() {
             />
             <div className='flex flex-col items-center justify-between max-w-[846px] w-full mt-[82px]'>
               <Group key='benefits grid'>
-                <div className='flex items-center justify-between w-full'>
-                  <div className='max-w-[248px] flex flex-col items-center gap-y-3 text-center'>
+                <div className='max-md:flex-col max-md:gap-y-10 items-center justify-between w-full'>
+                  <div className=' flex flex-col items-center gap-y-3 text-center'>
                     <img
                       src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/642700aa6306fd215d31bd7a_emergency.png'
                       loading='lazy'
@@ -100,7 +101,7 @@ export default function RetroBkk() {
                       covered.
                     </p>
                   </div>
-                  <div className='max-w-[248px] flex flex-col items-center gap-y-3 text-center'>
+                  <div className=' flex flex-col items-center gap-y-3 text-center'>
                     <img
                       src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/6427020c83bb0c51528e4bd7_cheap2.png'
                       loading='lazy'
@@ -116,7 +117,7 @@ export default function RetroBkk() {
                       flexible payment plans to help make it more manageable.
                     </p>
                   </div>
-                  <div className='max-w-[248px] flex flex-col items-center gap-y-3 text-center'>
+                  <div className=' flex flex-col items-center gap-y-3 text-center'>
                     <img
                       src='https://assets-global.website-files.com/63fde373aa2d3e5dc97c694e/6426f13db2096d417ae95205_fast.png'
                       loading='lazy'
@@ -158,9 +159,9 @@ export default function RetroBkk() {
       </Group>
       <Group key='features'>
         <div className='mt-20 mb-[120px]'>
-          <div className='flex flex-col items-center max-w-[1064px] w-full mx-auto'>
+          <div className='flex flex-col items-center max-w-[1064px] w-full mx-auto max-md:px-6'>
             <div className='flex flex-col text-center max-w-[620px] pb-20 '>
-              <h3 className='text-heading text-[40px] font-bold leading-tight'>
+              <h3 className='text-heading text-2xl md:text-[40px] font-bold leading-tight'>
                 Features available to our catchup bookkeeping service
               </h3>
               <p className='text-xl text-body mt-[10px]'>
@@ -170,7 +171,7 @@ export default function RetroBkk() {
             </div>
             <Group key='check grid'>
               <Group key='first'>
-                <div className='border-t border-[#f2f2f2] pt-20 flex items-start justify-between w-full'>
+                <div className='border-t border-[#f2f2f2] pt-10 md:pt-20 flex max-md:flex-col gap-y-10 items-start justify-between w-full'>
                   <div className='max-w-[364px] w-full flex flex-col'>
                     <h3 className='mt-4 text-heading font-bold text-[32px]'>
                       Catching Up on Your Accounting Records
@@ -207,7 +208,7 @@ export default function RetroBkk() {
                 </div>
               </Group>
               <Group key='second'>
-                <div className='border-t border-[#f2f2f2] pt-20 mt-20 flex items-start justify-between w-full'>
+                <div className='border-t border-[#f2f2f2] pt-10 md:pt-20 mt-20 flex max-md:flex-col gap-y-10 items-start justify-between w-full'>
                   <div className='max-w-[364px] w-full flex flex-col'>
                     <h3 className='mt-4 text-heading font-bold text-[32px]'>
                       Each Year, One Year-End Financial Package
