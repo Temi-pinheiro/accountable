@@ -11,7 +11,7 @@ export function useBoundedScroll(threshold: number) {
   useEffect(() => {
     return scrollY.on('change', (current) => {
       let previous = scrollY.getPrevious();
-      let diff = current - previous;
+      let diff = current - previous!;
       let newScrollYBounded = scrollYBounded.get() + diff;
 
       scrollYBounded.set(clamp(newScrollYBounded, 0, threshold));

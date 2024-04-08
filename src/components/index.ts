@@ -15,3 +15,4 @@ export * from './Vision';
 export * from './Panes';
 export * from './SectionHeading';
 export * from './Check';
+export * from './Step';
